@@ -1,0 +1,30 @@
+%unstyled {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+%cf {
+  @include clearfix();
+}
+%nav-horiz {
+  @extend %unstyled;
+  @extend %cf;
+
+  > li {
+    display:inline-block;
+    *display:inline;
+    zoom:1;
+    
+    > a {
+      display:inline-block;
+     *display:inline;
+      zoom:1;
+    }
+
+  }
+
+}
+
+%hidden {
+  display: none !important;
+}

@@ -1,0 +1,37 @@
+// media query mixin with IE < 9 fallbacks to desktop styles
+@mixin respond-to($width) {
+  @media screen and (min-width: $width) {
+    @content;
+  }
+  .lt-ie9 & { @content; }
+}
+
+// text replacement
+@mixin hide-text {
+  color:            transparent;
+  font:             0/0 a;
+  text-shadow:      none;
+}
+
+// placeholder text
+@mixin placeholder($color) {
+  ::-webkit-input-placeholder {
+    color: $color;
+    font-weight: 300;
+  }
+
+  :-moz-placeholder {
+    color: $color;
+    font-weight: 300;
+  }
+
+  ::-moz-placeholder {
+    color: $color;
+    font-weight: 300;
+  }
+
+  :-ms-input-placeholder {  
+    color: $color;
+    font-weight: 300;
+  }
+}

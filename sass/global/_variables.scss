@@ -1,0 +1,61 @@
+$txt: #111;
+
+$sans: Helvetica, sans-serif;
+$alt-font: Garamond, Times New Roman, serif;
+$body-font: $sans;
+
+
+// common pseudos helper
+// less typing ftw is all I'm saying here
+$pseudos: "&:hover,
+          &:focus,
+          &:active";
+
+// type
+$h1-size: 32;
+$h2-size: 24;
+$h3-size: 20;
+$h4-size: 18;
+$h5-size: 16;
+$h6-size: 16;
+$h1-em: em($h1-size, 16);
+$h2-em: em($h2-size, 16);
+$h3-em: em($h3-size, 16);
+$h4-em: em($h4-size, 16);
+$h5-em: em($h5-size);
+$h6-em: em($h6-size);
+
+// breakpoints
+$max-width: em(960);
+$small: em(500);
+$medium: em(768);
+$large: em(1024);
+
+// retina support
+$retina: "print,
+         (-o-min-device-pixel-ratio: 5/4),
+         (-webkit-min-device-pixel-ratio: 1.25),
+         (min-resolution: 120dpi)";
+
+//
+// Grid Variables
+//
+
+$row-width: em(1000);
+$column-gutter: em(30);
+$total-columns: 12;
+$default-float: left;
+
+//used to control text direction settings
+$text-direction: ltr !default;
+
+// NOTE: No need to change this conditional statement, $text-direction variable controls it all.
+$default-float: left !default;
+$opposite-direction: right !default;
+@if $text-direction == ltr {
+  $default-float: left;
+  $opposite-direction: right;
+} @else {
+  $default-float: right;
+  $opposite-direction: left;
+}
