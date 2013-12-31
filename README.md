@@ -1,7 +1,7 @@
 Default Project Base Setup
 =====
 
-Sets up preferred file sturcture, Gruntfile, & Compass.
+Sets up preferred file structure, Gruntfile, & Compass.
 
 ##### Get up and going:
 
