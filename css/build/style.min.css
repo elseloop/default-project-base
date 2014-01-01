@@ -455,4 +455,9 @@ a:hover, a:focus, a:active {
   font-weight: 300;
 }
 
+.wrap {
+  max-width: 75em;
+  margin: 0 auto;
+}
+
 /* No files to import found in objects/* */
