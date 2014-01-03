@@ -696,12 +696,12 @@ a:active {
 }
 
 .cta--appstore {
-  background: url('/img/ios-store.png?1388727299');
+  background: url('/img/ios-store.png?1388727324');
   background-size: 100%;
 }
 
 .cta--android {
-  background: url('/img/android-store.png?1388727299');
+  background: url('/img/android-store.png?1388727324');
   background-size: 100%;
 }
 
@@ -727,7 +727,7 @@ a:active {
   text-shadow: none;
   display: inline-block;
   vertical-align: middle;
-  background: transparent url('/img/heart.png?1388727299') no-repeat center center;
+  background: transparent url('/img/heart.png?1388727324') no-repeat center center;
   height: 14px;
   width: 27px;
   color: white;
@@ -735,7 +735,7 @@ a:active {
 
 .hero {
   padding-top: 2em;
-  background: #4fc8f7 url('/img/hero-bg.jpg?1388727299');
+  background: #4fc8f7 url('/img/hero-bg.jpg?1388727324');
   color: white;
   overflow: hidden;
 }
@@ -853,7 +853,7 @@ a:active {
   color: transparent;
   font: 0/0 a;
   text-shadow: none;
-  background-image: url('/img/logo.png?1388727299');
+  background-image: url('/img/logo.png?1388727324');
   background-repeat: no-repeat;
   background-position: "center" "center";
   display: block;
@@ -906,19 +906,19 @@ a:active {
 }
 
 .social-nav .fb {
-  background-image: url('/img/facebook.png?1388727299');
+  background-image: url('/img/facebook.png?1388727324');
 }
 
 .social-nav .tw {
-  background-image: url('/img/twitter.png?1388727299');
+  background-image: url('/img/twitter.png?1388727324');
 }
 
 .social-nav .email {
-  background-image: url('/img/email.png?1388727299');
+  background-image: url('/img/email.png?1388727324');
 }
 
 .social-nav .insta {
-  background-image: url('/img/instagram.png?1388727299');
+  background-image: url('/img/instagram.png?1388727324');
 }
 
 .app-summary {
@@ -934,7 +934,7 @@ a:active {
   display: block;
   height: 14px;
   width: 100%;
-  background: transparent url('/img/wave-yellow.png?1388727299') repeat-x;
+  background: transparent url('/img/wave-yellow.png?1388727324') repeat-x;
   position: relative;
   top: -46px;
   z-index: 2;
@@ -1051,7 +1051,7 @@ a:active {
   left: 50%;
   top: -21px;
   margin-left: -21px;
-  background: transparent url('/img/expand.png?1388727299') center center;
+  background: transparent url('/img/expand.png?1388727324') center center;
   height: 42px;
   width: 42px;
 }
