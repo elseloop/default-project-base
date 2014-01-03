@@ -15,6 +15,11 @@
     width: 100%;
     box-shadow: 0 0 75px 35px fade-out(black, .75);
   }
+
+  .pg-contact &:before,
+  .pg-about &:before {
+    display: none;
+  }
 }
 
 .site-credits {

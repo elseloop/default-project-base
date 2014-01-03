@@ -14,6 +14,11 @@
     z-index: 2;
   }
 
+  .pg-contact &:after,
+  .pg-about &:after {
+    display: none;
+  }
+
 }
 
 .banner-inner {

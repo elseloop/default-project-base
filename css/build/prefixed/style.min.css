@@ -603,6 +603,46 @@ a:active {
   min-height: 61px;
 }
 
+.pg-content {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 62.5em;
+  overflow: hidden;
+  *zoom: 1;
+}
+
+.pg-content > .pg-inner {
+  position: relative;
+  padding-left: 0.9375em;
+  padding-right: 0.9375em;
+  width: 83.33333%;
+  float: left;
+  min-height: 18.75em;
+  padding-top: 2.5em;
+  padding-bottom: 2.5em;
+}
+
+@media screen and (min-width: 48em) {
+  .pg-content > .pg-inner {
+    position: relative;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    width: 100%;
+    float: left;
+  }
+}
+
+.lt-ie9 .pg-content > .pg-inner {
+  position: relative;
+  padding-left: 0.9375em;
+  padding-right: 0.9375em;
+  width: 100%;
+  float: left;
+}
+
 .social-nav {
   position: relative;
   padding-left: 0.9375em;
@@ -842,6 +882,11 @@ a:active {
   box-shadow: 0 0 75px 35px rgba(0, 0, 0, 0.25);
 }
 
+.pg-contact .site-footer:before,
+.pg-about .site-footer:before {
+  display: none;
+}
+
 .site-credits {
   position: relative;
   padding-left: 0.9375em;
@@ -907,6 +952,11 @@ a:active {
   box-shadow: 0 -12px 75px 25px rgba(0, 0, 0, 0.45);
   position: relative;
   z-index: 2;
+}
+
+.pg-contact .hero:after,
+.pg-about .hero:after {
+  display: none;
 }
 
 .banner-inner {
