@@ -1140,9 +1140,9 @@ a:hover, a:focus, a:active {
   border-top: 1px solid #d1d3d4;
   padding-top: 2em;
 }
-.teaser--body:after {
-  content: "";
+.teaser--body .expando {
   display: block;
+  cursor: pointer;
   position: absolute;
   left: 50%;
   top: -21px;

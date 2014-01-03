@@ -1267,9 +1267,9 @@ a:active {
   padding-top: 2em;
 }
 
-.teaser--body:after {
-  content: "";
+.teaser--body .expando {
   display: block;
+  cursor: pointer;
   position: absolute;
   left: 50%;
   top: -21px;

@@ -37,9 +37,9 @@ $phone-height: 543px;
   border-top: 1px solid $hr;
   padding-top: 2em;
   
-  &:after {
-    content: "";
+  .expando {
     display: block;
+    cursor: pointer;
     position: absolute;
     left: 50%;
     top: -21px;
