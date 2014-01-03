@@ -10,6 +10,16 @@
     @include respond-to($medium) {
       @include grid-column(7);
     }
+    
+    h2, h3 {
+      color: $blue;
+    }
+
+    h3 {
+      font-family: $sans;
+      font-weight: normal;
+      text-transform: uppercase;
+    }
 
     a {
       color: $blue;
