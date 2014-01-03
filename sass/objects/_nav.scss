@@ -11,7 +11,8 @@
     text-transform: uppercase;
     padding: 0 1em;
     color: white;
-
+    
+    &.active,
     #{$pseudos} {
       color: $yellow;
     } // pseudos

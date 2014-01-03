@@ -1145,6 +1145,7 @@ a:active {
   color: white;
 }
 
+.main-nav a.active,
 .main-nav a:hover,
 .main-nav a:focus,
 .main-nav a:active {
