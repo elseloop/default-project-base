@@ -12,16 +12,23 @@
 $phone-height: 543px;
 
 .teaser--img {
+  @include transition(max-height .5s ease-out);
   overflow: hidden;
   position: relative;
-  height: $phone-height/4;
+  padding-bottom: 2em;
+
+  max-height: $phone-height/4;
 
   @include respond-to($small) {
-    height: $phone-height/3;
+    max-height: $phone-height/3;
   }
 
   @include respond-to($small) {
-    height: $phone-height/2.5;
+    max-height: $phone-height/2.5;
+  }
+
+  &.expand {
+    max-height: em(1000);
   }
 
 }

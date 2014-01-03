@@ -1037,29 +1037,36 @@ a:active {
 }
 
 .teaser--img {
+  -webkit-transition: max-height 0.5s ease-out;
+  transition: max-height 0.5s ease-out;
   overflow: hidden;
   position: relative;
-  height: 135.75px;
+  padding-bottom: 2em;
+  max-height: 135.75px;
 }
 
 @media screen and (min-width: 31.25em) {
   .teaser--img {
-    height: 181px;
+    max-height: 181px;
   }
 }
 
 .lt-ie9 .teaser--img {
-  height: 181px;
+  max-height: 181px;
 }
 
 @media screen and (min-width: 31.25em) {
   .teaser--img {
-    height: 217.2px;
+    max-height: 217.2px;
   }
 }
 
 .lt-ie9 .teaser--img {
-  height: 217.2px;
+  max-height: 217.2px;
+}
+
+.teaser--img.expand {
+  max-height: 62.5em;
 }
 
 .teaser--body {
