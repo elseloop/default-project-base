@@ -10,6 +10,15 @@
     @include respond-to($medium) {
       @include grid-column(12);
     }
+
+    a {
+      color: $blue;
+
+      #{$pseudos} {
+        color: $txt;
+      }
+      
+    }
     
   }
 }

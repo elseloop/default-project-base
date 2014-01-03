@@ -454,10 +454,6 @@ p {
   margin-top: 0;
 }
 
-p {
-  font-size: 0.875em;
-}
-
 a {
   -webkit-transition: color 0.25s;
   -moz-transition: color 0.25s;
@@ -470,22 +466,22 @@ a:hover, a:focus, a:active {
 }
 
 ::-webkit-input-placeholder {
-  color: #595959;
+  color: rgba(89, 89, 89, 0.5);
   font-weight: 300;
 }
 
 :-moz-placeholder {
-  color: #595959;
+  color: rgba(89, 89, 89, 0.5);
   font-weight: 300;
 }
 
 ::-moz-placeholder {
-  color: #595959;
+  color: rgba(89, 89, 89, 0.5);
   font-weight: 300;
 }
 
 :-ms-input-placeholder {
-  color: #595959;
+  color: rgba(89, 89, 89, 0.5);
   font-weight: 300;
 }
 
@@ -584,6 +580,12 @@ a:hover, a:focus, a:active {
   padding-right: 0.9375em;
   width: 100%;
   float: left;
+}
+.pg-content > .pg-inner a {
+  color: #4fc8f7;
+}
+.pg-content > .pg-inner a:hover, .pg-content > .pg-inner a:focus, .pg-content > .pg-inner a:active {
+  color: #595959;
 }
 
 .social-nav {
@@ -1086,7 +1088,7 @@ a:hover, a:focus, a:active {
     width: 41.66667%;
     float: right;
     max-width: 100%;
-    padding-top: 4em;
+    padding-top: 8em;
   }
 }
 .lt-ie9 .app-summary img {
@@ -1096,15 +1098,15 @@ a:hover, a:focus, a:active {
   width: 41.66667%;
   float: right;
   max-width: 100%;
-  padding-top: 4em;
+  padding-top: 8em;
 }
 @media screen and (min-width: 64em) {
   .app-summary img {
-    padding-top: 2em;
+    padding-top: 4em;
   }
 }
 .lt-ie9 .app-summary img {
-  padding-top: 2em;
+  padding-top: 4em;
 }
 
 .app-summary--inner {

@@ -30,9 +30,6 @@ p {
   // only push down, keeps things saner
   margin-top: 0;
 }
-p {
-  font-size: em(14);
-}
 a {
   @include transition(color .25s);
   text-decoration: none;  
@@ -43,4 +40,4 @@ a {
 
 }
 
-@include placeholder($txt);
+@include placeholder(fade-out($txt,.5));
