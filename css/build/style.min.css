@@ -637,12 +637,12 @@ a:hover, a:focus, a:active {
 }
 
 .cta--appstore {
-  background: url('/img/ios-store.png?1388766322');
+  background: url('/img/ios-store.png?1388767750');
   background-size: 100%;
 }
 
 .cta--android {
-  background: url('/img/android-store.png?1388766322');
+  background: url('/img/android-store.png?1388767750');
   background-size: 100%;
 }
 
@@ -655,7 +655,7 @@ a:hover, a:focus, a:active {
   display: block;
   height: 23px;
   width: 100%;
-  background: transparent url('/img/wave-white.png?1388766322') repeat-x;
+  background: transparent url('/img/wave-white.png?1388767771') repeat-x;
   position: relative;
   bottom: -55px;
   z-index: 2;
@@ -688,7 +688,7 @@ a:hover, a:focus, a:active {
   text-shadow: none;
   display: inline-block;
   vertical-align: middle;
-  background: transparent url('/img/heart.png?1388766322') no-repeat center center;
+  background: transparent url('/img/heart.png?1388767750') no-repeat center center;
   height: 14px;
   width: 27px;
   color: white;
@@ -696,7 +696,7 @@ a:hover, a:focus, a:active {
 
 .hero {
   padding-top: 2em;
-  background: #4fc8f7 url('/img/hero-bg.jpg?1388766322');
+  background: #4fc8f7 url('/img/hero-bg.jpg?1388767750');
   color: white;
   overflow: hidden;
 }
@@ -801,7 +801,7 @@ a:hover, a:focus, a:active {
   color: transparent;
   font: 0/0 a;
   text-shadow: none;
-  background-image: url('/img/logo.png?1388766322');
+  background-image: url('/img/logo.png?1388767750');
   background-repeat: no-repeat;
   background-position: "center" "center";
   display: block;
@@ -846,16 +846,16 @@ a:hover, a:focus, a:active {
   margin-right: 0;
 }
 .social-nav .fb {
-  background-image: url('/img/facebook.png?1388766322');
+  background-image: url('/img/facebook.png?1388767750');
 }
 .social-nav .tw {
-  background-image: url('/img/twitter.png?1388766322');
+  background-image: url('/img/twitter.png?1388767750');
 }
 .social-nav .email {
-  background-image: url('/img/email.png?1388766322');
+  background-image: url('/img/email.png?1388767750');
 }
 .social-nav .insta {
-  background-image: url('/img/instagram.png?1388766322');
+  background-image: url('/img/instagram.png?1388767750');
 }
 
 .app-summary {
@@ -869,7 +869,7 @@ a:hover, a:focus, a:active {
   display: block;
   height: 14px;
   width: 100%;
-  background: transparent url('/img/wave-yellow.png?1388766322') repeat-x;
+  background: transparent url('/img/wave-yellow.png?1388767750') repeat-x;
   position: relative;
   top: -46px;
   z-index: 2;
@@ -973,7 +973,7 @@ a:hover, a:focus, a:active {
   left: 50%;
   top: -21px;
   margin-left: -21px;
-  background: transparent url('/img/expand.png?1388766322') center center;
+  background: transparent url('/img/expand.png?1388767750') center center;
   height: 42px;
   width: 42px;
 }
