@@ -2,6 +2,18 @@
   padding: 5em 0 2em;
   background-color: $blue;
   text-align: center;
+  overflow: hidden;
+
+  &:before {
+    content: "";
+    display: block;
+    position: relative;
+    z-index: 1;
+    top: -60px;
+    height: 0;
+    width: 100%;
+    box-shadow: 0 0 75px 35px fade-out(black, .75);
+  }
 }
 
 .site-credits {

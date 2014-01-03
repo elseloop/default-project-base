@@ -710,10 +710,33 @@ a:active {
   text-align: center;
 }
 
+.lower-cta:after {
+  content: "";
+  display: block;
+  height: 23px;
+  width: 100%;
+  background: transparent url('/img/wave-white.png?1388766322') repeat-x;
+  position: relative;
+  bottom: -55px;
+  z-index: 2;
+}
+
 .site-footer {
   padding: 5em 0 2em;
   background-color: #4fc8f7;
   text-align: center;
+  overflow: hidden;
+}
+
+.site-footer:before {
+  content: "";
+  display: block;
+  position: relative;
+  z-index: 1;
+  top: -60px;
+  height: 0;
+  width: 100%;
+  box-shadow: 0 0 75px 35px rgba(0, 0, 0, 0.25);
 }
 
 .site-credits {
