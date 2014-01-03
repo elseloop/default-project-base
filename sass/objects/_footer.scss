@@ -1,4 +1,5 @@
 .site-footer {
+  @extend %cf;
   padding: 5em 0 2em;
   background-color: $blue;
   text-align: center;
@@ -17,9 +18,16 @@
 }
 
 .site-credits {
+  @include grid-column(10, $center: true);
+  text-align: center;
   margin-top: 2.5em;
   color: fade-out(#f4f4f5, .4);
 
+  @include respond-to($medium) {
+    @include grid-column(6, $center: true);
+  }
+
+  
   span {
     @include hide-text();
     display: inline-block;

@@ -1,11 +1,12 @@
 .social-nav {
+  @extend %cf;
   
   a {
     @include hide-text();
     display: inline-block;
-    width: 85px;
+    // width: 85px;
     height: 85px;
-    margin-right: 35px;
+    // margin-right: 35px;
     background: transparent no-repeat center center;
     vertical-align: top;
 

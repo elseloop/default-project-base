@@ -1,6 +1,10 @@
 .app-features {
   padding: 2em 0;
 }
+
+.app-summary-utility {
+  @include grid-row();
+}
 .teaser-block {
   @include grid-column(12);
 

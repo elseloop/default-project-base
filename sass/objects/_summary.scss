@@ -1,8 +1,17 @@
 .app-summary {
   position: relative;
-  padding: 2em 0 5em;
+  padding: 2em 0 3em;
   box-shadow: 0 -80px 70px 30px rgba(black, .25);
-  background: linear-gradient(color-stops($yellow, $yellow 58%, white 58%));
+  background: linear-gradient(color-stops($yellow, $yellow 65%, white 65%));
+
+  @include respond-to($small) {
+    background: linear-gradient(color-stops($yellow, $yellow 61%, white 61%));
+    padding-bottom: 4em;
+  }
+  @include respond-to($large) {
+    background: linear-gradient(color-stops($yellow, $yellow 58%, white 58%));
+    padding-bottom: 5em;
+  }
   
   &:before {
     content: "";
@@ -14,12 +23,26 @@
     top: -46px; // height + padding = 14px + 2em = 46
     z-index: 2;
   }
+  
+  .wrap {
+    overflow: visible;
+  }
 
   img {
     @include grid-column(12);
+    padding-top: .5em;
 
+    @include respond-to($small) {
+      max-width: 75%;
+      padding-top: 2em;
+    }
     @include respond-to($medium) {
       @include grid-column(5, $float: right);
+      max-width: 100%;
+      padding-top: 4em;
+    }
+    @include respond-to($large) {
+      padding-top: 2em;
     }
   }
 
@@ -36,5 +59,6 @@
       font-size: em(26);
       margin-bottom: .5em;
     }
+
   }
 }
