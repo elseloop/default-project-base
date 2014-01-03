@@ -1,14 +1,14 @@
 .pg-content {
   @include grid-row();
+  padding-top: 2.5em;
+  padding-bottom: 2.5em;
 
   > .pg-inner {
-    @include grid-column(10);
+    @include grid-column(12);
     min-height: em(300);
-    padding-top: 2.5em;
-    padding-bottom: 2.5em;
 
     @include respond-to($medium) {
-      @include grid-column(12);
+      @include grid-column(7);
     }
 
     a {
@@ -20,5 +20,21 @@
       
     }
     
+  } // pg-inner
+
+  > .sidebar {
+    @include grid-column(12);
+
+    @include respond-to($medium) {
+      @include grid-column(4, $float: right);
+    }
+
+    table {
+      border-radius: 4px;
+      border: 1px solid $hr;
+    }
+    tr {
+      border-radius: 4px;
+    }
   }
 }
