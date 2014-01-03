@@ -1,0 +1,40 @@
+.app-summary {
+  position: relative;
+  padding: 2em 0 5em;
+  box-shadow: 0 -80px 70px 30px rgba(black, .25);
+  background: linear-gradient(color-stops($yellow, $yellow 58%, white 58%));
+  
+  &:before {
+    content: "";
+    display: block;
+    height: 14px;
+    width: 100%;
+    background: transparent image-url('wave-yellow.png') repeat-x;
+    position: relative;
+    top: -46px; // height + padding = 14px + 2em = 46
+    z-index: 2;
+  }
+
+  img {
+    @include grid-column(12);
+
+    @include respond-to($medium) {
+      @include grid-column(5, $float: right);
+    }
+  }
+
+}
+
+.app-summary--inner {
+  @include grid-column(12);
+  color: $brown;
+
+  @include respond-to($medium) {
+    @include grid-column(7, $float: right);
+
+    h3 {
+      font-size: em(26);
+      margin-bottom: .5em;
+    }
+  }
+}

@@ -10,17 +10,10 @@
   @extend %unstyled;
   @extend %cf;
 
-  > li {
+  > a {
     display:inline-block;
-    *display:inline;
+   *display:inline;
     zoom:1;
-    
-    > a {
-      display:inline-block;
-     *display:inline;
-      zoom:1;
-    }
-
   }
 
 }

@@ -9,7 +9,6 @@ module.exports = function(grunt) {
       dist: {
         options: {
           style: 'expanded', // we'll compress it later
-          require: 'sass-globbing',
           compass: true
         },
         files: {

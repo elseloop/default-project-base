@@ -1,0 +1,21 @@
+.main-nav {
+  text-align: left;
+
+  @include respond-to($medium) {
+    text-align: right;
+  }
+
+  a {
+    line-height: $logo-height;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0 1em;
+    color: white;
+
+    #{$pseudos} {
+      color: $yellow;
+    } // pseudos
+
+  } // a
+
+}

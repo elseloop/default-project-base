@@ -1,4 +1,5 @@
 .wrap {
+  @extend %cf;
   max-width: em(1200);
   margin: 0 auto;
 }

@@ -1,0 +1,20 @@
+.site-footer {
+  padding: 5em 0 2em;
+  background-color: $blue;
+  text-align: center;
+}
+
+.site-credits {
+  margin-top: 2.5em;
+  color: fade-out(#f4f4f5, .4);
+
+  span {
+    @include hide-text();
+    display: inline-block;
+    vertical-align: middle;
+    background: transparent image-url('heart.png') no-repeat center center;
+    height: 14px;
+    width: 27px;
+    color: white;
+  }
+}
