@@ -1,0 +1,45 @@
+.teaser-block {
+  text-align: center;
+
+  h3 {
+    font-family: $sans;
+    font-weight: normal;
+    color: $blue;
+  }
+
+}
+
+$phone-height: 543px;
+
+.teaser--img {
+  overflow: hidden;
+  position: relative;
+  height: $phone-height/4;
+
+  @include respond-to($small) {
+    height: $phone-height/3;
+  }
+
+  @include respond-to($small) {
+    height: $phone-height/2.5;
+  }
+
+}
+
+.teaser--body {
+  border-top: 1px solid $hr;
+  padding-top: 2em;
+  
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: -21px;
+    margin-left: -21px;
+    background: transparent image-url('expand.png') center center;
+    height: 42px;
+    width: 42px;
+  }
+
+}

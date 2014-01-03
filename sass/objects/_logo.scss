@@ -1,0 +1,6 @@
+.logo {
+  @include replace-text( image-url('logo.png'), "center", "center" );
+  display: block;
+  height: $logo-height;
+  width: $logo-width;
+}

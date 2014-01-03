@@ -1,0 +1,77 @@
+.hero {
+  padding-top: 2em;
+  background: $blue image-url('hero-bg.jpg');
+  color: white;
+  overflow: hidden;
+  
+  &:after {
+    content: "";
+    display: block;
+    height: 0;
+    width: 100%;
+    box-shadow: 0 -12px 75px 25px rgba(0,0,0,.45);
+    position: relative;
+    z-index: 2;
+  }
+
+}
+
+.banner-inner {
+  @extend %cf;
+  padding-top: 5em;
+  
+  p {
+    margin-bottom: 0;
+  }
+
+  .banner--phone {
+    @include grid-column(12);
+    top: 20px;
+
+    @include respond-to($medium) {
+      @include grid-column(6, $collapse: true, $pull: 6);  
+    }
+    
+    .hero-showcase {
+      
+    }
+    .hero-showcase--hand {
+      position: relative;
+      z-index: 1;
+    }
+    .hero-showcase--iphone {
+      position: absolute;
+      z-index: 3;
+      top: -80px;
+      right: 53px;
+    }
+    .hero-showcase--app {
+      position: absolute;
+      z-index: 2;
+      top: 19px;
+      right: 77px;
+    }
+
+  }
+
+  .banner--message {
+    @include grid-column(12);
+    text-align: center;
+
+    @include respond-to($medium) {
+      @include grid-column(6, $collapse: true, $push: 6);  
+    }
+
+    h2 {
+      position: relative;
+      left: -120px;
+    }
+
+    p {
+      text-align: left;
+      padding-left: 2.5em;
+    }
+    
+  }
+
+}
