@@ -866,14 +866,14 @@ a:active {
   color: transparent;
   font: 0/0 a;
   text-shadow: none;
-  -webkit-transition: opacity 0.2s;
-  transition: opacity 0.2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
   display: inline-block;
   width: 99px;
   height: 33.5px;
 }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 55.1875em) {
   .cta {
     width: 198px;
     height: 67px;
@@ -892,12 +892,12 @@ a:active {
 }
 
 .cta--appstore {
-  background: url('/img/ios-store.png?1388789169');
+  background: url('/img/ios-store.png?1388882644');
   background-size: 100%;
 }
 
 .cta--android {
-  background: url('/img/android-store.png?1388789169');
+  background: url('/img/android-store.png?1388882644');
   background-size: 100%;
 }
 
@@ -911,7 +911,7 @@ a:active {
   display: block;
   height: 23px;
   width: 100%;
-  background: transparent url('/img/wave-white.png?1388789169') repeat-x;
+  background: transparent url('/img/wave-white.png?1388882644') repeat-x;
   position: relative;
   bottom: -55px;
   z-index: 2;
@@ -984,7 +984,7 @@ a:active {
   text-shadow: none;
   display: inline-block;
   vertical-align: middle;
-  background: transparent url('/img/heart.png?1388789169') no-repeat center center;
+  background: transparent url('/img/heart.png?1388882644') no-repeat center center;
   height: 14px;
   width: 27px;
   color: white;
@@ -992,7 +992,7 @@ a:active {
 
 .hero {
   padding-top: 2em;
-  background: #4fc8f7 url('/img/hero-bg.jpg?1388789169');
+  background: #4fc8f7 url('/img/hero-bg.jpg?1388882644');
   color: white;
   overflow: hidden;
 }
@@ -1013,6 +1013,16 @@ a:active {
 }
 
 .banner-inner {
+  padding-top: .5em;
+}
+
+@media screen and (min-width: 48em) {
+  .banner-inner {
+    padding-top: 5em;
+  }
+}
+
+.lt-ie9 .banner-inner {
   padding-top: 5em;
 }
 
@@ -1051,23 +1061,45 @@ a:active {
   float: left;
 }
 
-.banner-inner .banner--phone .hero-showcase--hand {
+.banner-inner .banner--phone .banner--phone--hand {
   position: relative;
-  z-index: 1;
-}
-
-.banner-inner .banner--phone .hero-showcase--iphone {
-  position: absolute;
-  z-index: 3;
-  top: -80px;
-  right: 53px;
-}
-
-.banner-inner .banner--phone .hero-showcase--app {
-  position: absolute;
   z-index: 2;
-  top: 19px;
-  right: 77px;
+}
+
+.banner-inner .banner--phone .banner--phone--bg {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0.9375em;
+  bottom: 0;
+  left: 0.9375em;
+  max-width: 636px;
+  height: 100%;
+  text-align: right;
+}
+
+@media screen and (min-width: 48em) {
+  .banner-inner .banner--phone .banner--phone--bg {
+    max-width: 100%;
+    right: 0;
+    left: 0;
+  }
+}
+
+.lt-ie9 .banner-inner .banner--phone .banner--phone--bg {
+  max-width: 100%;
+  right: 0;
+  left: 0;
+}
+
+.banner-inner .banner--phone .banner--phone--bg img {
+  position: relative;
+  top: -2.75482%;
+  left: -15.33333%;
+  width: 45.23899%;
+  height: 100%;
+  background: transparent url('/img/app-hero.gif?1388882645') no-repeat right center;
+  background-size: 96%;
 }
 
 .banner-inner .banner--message {
@@ -1077,6 +1109,7 @@ a:active {
   width: 100%;
   float: left;
   text-align: center;
+  margin-bottom: 2em;
 }
 
 @media screen and (min-width: 48em) {
@@ -1088,6 +1121,7 @@ a:active {
     left: 50%;
     right: auto;
     float: left;
+    margin-bottom: 0;
   }
 }
 
@@ -1099,14 +1133,36 @@ a:active {
   left: 50%;
   right: auto;
   float: left;
+  margin-bottom: 0;
 }
 
 .banner-inner .banner--message h2 {
   position: relative;
+  left: -40px;
+}
+
+@media screen and (min-width: 48em) {
+  .banner-inner .banner--message h2 {
+    left: -120px;
+  }
+}
+
+.lt-ie9 .banner-inner .banner--message h2 {
   left: -120px;
 }
 
 .banner-inner .banner--message p {
+  text-align: center;
+}
+
+@media screen and (min-width: 48em) {
+  .banner-inner .banner--message p {
+    text-align: left;
+    padding-left: 2.5em;
+  }
+}
+
+.lt-ie9 .banner-inner .banner--message p {
   text-align: left;
   padding-left: 2.5em;
 }
@@ -1115,7 +1171,7 @@ a:active {
   color: transparent;
   font: 0/0 a;
   text-shadow: none;
-  background-image: url('/img/logo.png?1388789169');
+  background-image: url('/img/logo.png?1388882644');
   background-repeat: no-repeat;
   background-position: "center" "center";
   display: block;
@@ -1199,15 +1255,15 @@ a:active {
 }
 
 .resource-list a.photo:before {
-  background: transparent url('/img/icon-photo.jpg?1388789169') no-repeat center center;
+  background: transparent url('/img/icon-photo.jpg?1388882644') no-repeat center center;
 }
 
 .resource-list a.video:before {
-  background: transparent url('/img/icon-video.jpg?1388789169') no-repeat center center;
+  background: transparent url('/img/icon-video.jpg?1388882644') no-repeat center center;
 }
 
 .resource-list a.document:before {
-  background: transparent url('/img/icon-document.jpg?1388789169') no-repeat center center;
+  background: transparent url('/img/icon-document.jpg?1388882644') no-repeat center center;
 }
 
 .social-nav a {
@@ -1225,19 +1281,19 @@ a:active {
 }
 
 .social-nav .fb {
-  background-image: url('/img/facebook.png?1388789169');
+  background-image: url('/img/facebook.png?1388882644');
 }
 
 .social-nav .tw {
-  background-image: url('/img/twitter.png?1388789169');
+  background-image: url('/img/twitter.png?1388882644');
 }
 
 .social-nav .email {
-  background-image: url('/img/email.png?1388789169');
+  background-image: url('/img/email.png?1388882644');
 }
 
 .social-nav .insta {
-  background-image: url('/img/instagram.png?1388789169');
+  background-image: url('/img/instagram.png?1388882644');
 }
 
 .app-summary {
@@ -1281,7 +1337,7 @@ a:active {
   display: block;
   height: 14px;
   width: 100%;
-  background: transparent url('/img/wave-yellow.png?1388789169') repeat-x;
+  background: transparent url('/img/wave-yellow.png?1388882644') repeat-x;
   position: relative;
   top: -46px;
   z-index: 2;
@@ -1436,7 +1492,7 @@ a:active {
   left: 50%;
   top: -21px;
   margin-left: -21px;
-  background: transparent url('/img/expand.png?1388789169') center center;
+  background: transparent url('/img/expand.png?1388882644') center center;
   height: 42px;
   width: 42px;
 }
