@@ -502,7 +502,7 @@ a:hover, a:focus, a:active {
   float: left;
   margin-bottom: 0;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 47.9375em) {
   .logo-wrap {
     position: relative;
     padding-left: 0.9375em;
@@ -526,7 +526,7 @@ a:hover, a:focus, a:active {
   width: 100%;
   float: left;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 47.9375em) {
   .main-nav {
     position: relative;
     padding-left: 0.9375em;
@@ -565,7 +565,7 @@ a:hover, a:focus, a:active {
   float: left;
   min-height: 18.75em;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 47.9375em) {
   .pg-content > .pg-inner {
     position: relative;
     padding-left: 0.9375em;
@@ -602,7 +602,7 @@ a:hover, a:focus, a:active {
   width: 100%;
   float: left;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 47.9375em) {
   .pg-content > .sidebar {
     position: relative;
     padding-left: 0.9375em;
@@ -659,7 +659,7 @@ a:hover, a:focus, a:active {
   float: none !important;
   float: left;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 47.9375em) {
   .social-nav {
     position: relative;
     padding-left: 0.9375em;
@@ -689,7 +689,7 @@ a:hover, a:focus, a:active {
 .social-nav a:nth-child(3) {
   clear: left;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 47.9375em) {
   .social-nav a {
     width: 25%;
     margin-bottom: 0;
@@ -728,7 +728,7 @@ a:hover, a:focus, a:active {
   width: 100%;
   float: left;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 47.9375em) {
   .teaser-block {
     position: relative;
     padding-left: 0.9375em;
@@ -755,7 +755,7 @@ a:hover, a:focus, a:active {
   float: none !important;
   float: left;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 47.9375em) {
   .teaser--body {
     position: relative;
     padding-left: 0.9375em;
@@ -790,7 +790,7 @@ a:hover, a:focus, a:active {
   width: 99px;
   height: 33.5px;
 }
-@media screen and (min-width: 55.1875em) {
+@media screen and (min-width: 55.125em) {
   .cta {
     width: 198px;
     height: 67px;
@@ -862,7 +862,7 @@ a:hover, a:focus, a:active {
   margin-top: 2.5em;
   color: rgba(244, 244, 245, 0.6);
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 47.9375em) {
   .site-credits {
     position: relative;
     padding-left: 0.9375em;
@@ -918,7 +918,7 @@ a:hover, a:focus, a:active {
 .banner-inner {
   padding-top: .5em;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 47.9375em) {
   .banner-inner {
     padding-top: 5em;
   }
@@ -937,7 +937,7 @@ a:hover, a:focus, a:active {
   float: left;
   top: 20px;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 47.9375em) {
   .banner-inner .banner--phone {
     position: relative;
     padding-left: 0;
@@ -972,7 +972,7 @@ a:hover, a:focus, a:active {
   height: 100%;
   text-align: right;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 47.9375em) {
   .banner-inner .banner--phone .banner--phone--bg {
     max-width: 100%;
     right: 0;
@@ -1000,7 +1000,7 @@ a:hover, a:focus, a:active {
   text-align: center;
   margin-bottom: 2em;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 47.9375em) {
   .banner-inner .banner--message {
     position: relative;
     padding-left: 0;
@@ -1026,7 +1026,7 @@ a:hover, a:focus, a:active {
   position: relative;
   left: -40px;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 47.9375em) {
   .banner-inner .banner--message h2 {
     left: -120px;
   }
@@ -1037,7 +1037,7 @@ a:hover, a:focus, a:active {
 .banner-inner .banner--message p {
   text-align: center;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 47.9375em) {
   .banner-inner .banner--message p {
     text-align: left;
     padding-left: 2.5em;
@@ -1063,7 +1063,7 @@ a:hover, a:focus, a:active {
 .main-nav {
   text-align: left;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 47.9375em) {
   .main-nav {
     text-align: right;
   }
@@ -1211,7 +1211,7 @@ a:hover, a:focus, a:active {
   max-width: 75%;
   padding-top: 2em;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 47.9375em) {
   .app-summary img {
     position: relative;
     padding-left: 0.9375em;
@@ -1248,7 +1248,7 @@ a:hover, a:focus, a:active {
   float: left;
   color: #9c5b15;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 47.9375em) {
   .app-summary--inner {
     position: relative;
     padding-left: 0.9375em;
