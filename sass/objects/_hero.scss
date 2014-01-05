@@ -63,17 +63,12 @@
         left: 0;
       }
 
-      // dummy transparent shiv so we get some proper resizing
-      // data uri, so at least we're savign on http hits
-      // I think.
       img {
         position: relative;
-        top: -((20*100)/726) * 1%; // offset top from phone to "screen" / height of hand img, as %
-        left: -((92*100)/600) * 1%; // offset left from phone to "screen" / width of hand img, as %
-        width: 45.23899%;
-        height: 100%;
-        background: transparent image-url('app-hero.gif') no-repeat right center;
-        background-size: 96%;
+        top: ((95*100)/690) * 1%; // offset top from phone to "screen" / height of hand img, as %
+        left: -((92.5*100)/600) * 1%; // offset left from phone to "screen" / width of hand img, as %
+        width: 43.239%; // width of "screen" as % of parent's width (width of hand image)
+        height: auto;
       }
     }
 

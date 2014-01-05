@@ -1094,12 +1094,10 @@ a:active {
 
 .banner-inner .banner--phone .banner--phone--bg img {
   position: relative;
-  top: -2.75482%;
-  left: -15.33333%;
-  width: 45.23899%;
-  height: 100%;
-  background: transparent url('/img/app-hero.gif?1388882645') no-repeat right center;
-  background-size: 96%;
+  top: 13.76812%;
+  left: -15.41667%;
+  width: 43.239%;
+  height: auto;
 }
 
 .banner-inner .banner--message {
