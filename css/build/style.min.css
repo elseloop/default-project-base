@@ -931,8 +931,8 @@ a:hover, a:focus, a:active {
 }
 .banner-inner .banner--phone {
   position: relative;
-  padding-left: 0.9375em;
-  padding-right: 0.9375em;
+  padding-left: 0;
+  padding-right: 0;
   width: 100%;
   float: left;
   top: 20px;
@@ -965,30 +965,32 @@ a:hover, a:focus, a:active {
   position: absolute;
   z-index: 1;
   top: 0;
-  right: 0.9375em;
+  right: 0;
   bottom: 0;
-  left: 0.9375em;
-  max-width: 636px;
-  height: 100%;
+  left: 0;
   text-align: right;
+  height: 100%;
+  max-width: 636px;
+  max-height: 726px;
+  padding-top: 13.91185%;
 }
 @media screen and (min-width: 47.9375em) {
   .banner-inner .banner--phone .banner--phone--bg {
-    max-width: 100%;
     right: 0;
     left: 0;
   }
 }
 .lt-ie9 .banner-inner .banner--phone .banner--phone--bg {
-  max-width: 100%;
   right: 0;
   left: 0;
 }
 .banner-inner .banner--phone .banner--phone--bg img {
   position: relative;
-  top: 13.76812%;
+  top: 1.8595%;
   left: -15.41667%;
   width: 43.239%;
+  max-width: 272px;
+  max-height: 484px;
   height: auto;
 }
 .banner-inner .banner--message {

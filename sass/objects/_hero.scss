@@ -34,7 +34,7 @@
   }
 
   .banner--phone {
-    @include grid-column(12);
+    @include grid-column(12, $collapse: true);
     top: 20px;
 
     @include respond-to($medium) {
@@ -50,24 +50,28 @@
       position: absolute;
       z-index: 1;
       top: 0;
-      right: $column-gutter / 2;
+      right: 0;
       bottom: 0;
-      left: $column-gutter / 2;
-      max-width: 636px;
-      height: 100%;
+      left: 0;
       text-align: right;
+      height: 100%;
+      max-width: 636px; // hand image dimensions here
+      max-height: 726px;
+      
+      padding-top: ( (101 * 100) / 726 ) * 1%;
 
       @include respond-to($medium) {
-        max-width: 100%;
         right: 0;
         left: 0;
       }
 
       img {
         position: relative;
-        top: ((95*100)/690) * 1%; // offset top from phone to "screen" / height of hand img, as %
-        left: -((92.5*100)/600) * 1%; // offset left from phone to "screen" / width of hand img, as %
+        top: ((9 * 100)/484) * 1%;
+        left: -( (92.5 * 100) / 600 ) * 1%; // offset right from phone to "screen" / width of hand img, as %
         width: 43.239%; // width of "screen" as % of parent's width (width of hand image)
+        max-width: 272px;
+        max-height: 484px;
         height: auto;
       }
     }
