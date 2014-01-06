@@ -4,7 +4,15 @@
   display: inline-block;
   width: (198/2) * 1px;
   height: (67/2) * 1px;
-
+  
+  @include respond-to($small) {
+    width: 198px;
+    height: 67px;
+  }
+  @include respond-to($medium) {
+    width: (198/2) * 1px;
+  height: (67/2) * 1px;
+  }
   @include respond-to($medium + em(115)) {
     width: 198px;
     height: 67px;
