@@ -915,12 +915,12 @@ a:active {
 }
 
 .cta--appstore {
-  background: url('/img/ios-store.png?1389030080');
+  background: url('/img/ios-store.png?1389041776');
   background-size: 100%;
 }
 
 .cta--android {
-  background: url('/img/android-store.png?1389030080');
+  background: url('/img/android-store.png?1389041776');
   background-size: 100%;
 }
 
@@ -934,7 +934,7 @@ a:active {
   display: block;
   height: 23px;
   width: 100%;
-  background: transparent url('/img/wave-white.png?1389030080') repeat-x;
+  background: transparent url('/img/wave-white.png?1389041776') repeat-x;
   position: relative;
   bottom: -55px;
   z-index: 2;
@@ -1007,7 +1007,7 @@ a:active {
   text-shadow: none;
   display: inline-block;
   vertical-align: middle;
-  background: transparent url('/img/heart.png?1389030080') no-repeat center center;
+  background: transparent url('/img/heart.png?1389041776') no-repeat center center;
   height: 14px;
   width: 27px;
   color: white;
@@ -1015,7 +1015,7 @@ a:active {
 
 .hero {
   padding-top: 2em;
-  background: #4fc8f7 url('/img/hero-bg.jpg?1389030080');
+  background: #4fc8f7 url('/img/hero-bg.jpg?1389041776');
   color: white;
   overflow: hidden;
 }
@@ -1209,7 +1209,7 @@ a:active {
   color: transparent;
   font: 0/0 a;
   text-shadow: none;
-  background-image: url('/img/logo.png?1389030080');
+  background-image: url('/img/logo.png?1389041776');
   background-repeat: no-repeat;
   background-position: center center;
   display: block;
@@ -1303,15 +1303,15 @@ a:active {
 }
 
 .resource-list a.photo:before {
-  background: transparent url('/img/icon-photo.jpg?1389030080') no-repeat center center;
+  background: transparent url('/img/icon-photo.jpg?1389041776') no-repeat center center;
 }
 
 .resource-list a.video:before {
-  background: transparent url('/img/icon-video.jpg?1389030080') no-repeat center center;
+  background: transparent url('/img/icon-video.jpg?1389041776') no-repeat center center;
 }
 
 .resource-list a.document:before {
-  background: transparent url('/img/icon-document.jpg?1389030080') no-repeat center center;
+  background: transparent url('/img/icon-document.jpg?1389041776') no-repeat center center;
 }
 
 .social-nav a {
@@ -1329,19 +1329,19 @@ a:active {
 }
 
 .social-nav .fb {
-  background-image: url('/img/facebook.png?1389030080');
+  background-image: url('/img/facebook.png?1389041776');
 }
 
 .social-nav .tw {
-  background-image: url('/img/twitter.png?1389030080');
+  background-image: url('/img/twitter.png?1389041776');
 }
 
 .social-nav .email {
-  background-image: url('/img/email.png?1389030080');
+  background-image: url('/img/email.png?1389041776');
 }
 
 .social-nav .insta {
-  background-image: url('/img/instagram.png?1389030080');
+  background-image: url('/img/instagram.png?1389041776');
 }
 
 .app-summary {
@@ -1385,7 +1385,7 @@ a:active {
   display: block;
   height: 14px;
   width: 100%;
-  background: transparent url('/img/wave-yellow.png?1389030080') repeat-x;
+  background: transparent url('/img/wave-yellow.png?1389041776') repeat-x;
   position: relative;
   top: -46px;
   z-index: 2;
@@ -1540,7 +1540,7 @@ a:active {
   left: 50%;
   top: -21px;
   margin-left: -21px;
-  background: transparent url('/img/expand.png?1389030080') center center;
+  background: transparent url('/img/expand.png?1389041776') center center;
   height: 42px;
   width: 42px;
 }
