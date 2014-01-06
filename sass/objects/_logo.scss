@@ -1,6 +1,10 @@
 .logo {
-  @include replace-text( image-url('logo.png'), "center", "center" );
+  @include replace-text( image-url('logo.png'), center, center );
   display: block;
   height: $logo-height;
-  width: $logo-width;
+  width: 100%;
+  
+  @include respond-to($medium) {
+    width: $logo-width;
+  }
 }

@@ -24,10 +24,6 @@
 .banner-inner {
   @extend %cf;
   padding-top: .5em;
-
-  @include respond-to($medium) {
-    padding-top: 5em;
-  }
   
   p {
     margin-bottom: 0;
@@ -36,9 +32,10 @@
   .banner--phone {
     @include grid-column(12, $collapse: true);
     top: 20px;
-
+    left: -13%; // ~120px
+    
     @include respond-to($medium) {
-      @include grid-column(6, $collapse: true, $pull: 6);  
+      @include grid-column(6, $collapse: true, $pull: 6);
     }
     
     .banner--phone--hand {
@@ -81,11 +78,15 @@
   .banner--message {
     @include grid-column(12);
     text-align: center;
-    margin-bottom: 2em;
-
+    margin-bottom: 1em;
+    
     @include respond-to($medium) {
       @include grid-column(6, $collapse: true, $push: 6);
       margin-bottom: 0;
+      top: em(60);
+    }
+    @include respond-to($large) {
+      top: em(80);
     }
 
     h2 {
@@ -93,8 +94,15 @@
       left: -40px;
 
       @include respond-to($medium) {
-        left: -120px;
+        max-width: 80%;
+        left: -16.20087%; // ~120px
       }
+
+      @include respond-to(em(1100)) {
+        max-width: 100%;
+        left: -26.20087%; // ~120px
+      }
+
     }
 
     p {
@@ -102,7 +110,6 @@
 
       @include respond-to($medium) {
         text-align: left;
-        padding-left: 2.5em;
       }
     }
     
