@@ -21,3 +21,13 @@
 %hidden {
   display: none !important;
 }
+
+%accordion {
+  @include transition(max-height .4s ease-out);
+  overflow: hidden;
+  max-height: 0;
+
+  &.open {
+    max-height: 999px;
+  }
+}

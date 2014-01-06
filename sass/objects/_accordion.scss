@@ -1,0 +1,39 @@
+.accordion-trigger{
+  position: relative;
+  top: 3px;
+  display: inline-block;
+  width: auto;
+  float: right;
+  vertical-align: middle;
+  font-size: em(14);
+  color: fade-out( $txt, .4 );
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &:after {
+    content: "\25BA";
+    display: inline-block;
+    font-size: em(13);
+    padding-left: .5em;
+    margin-top: -3px;
+    vertical-align: middle;
+  }
+
+  &.open:after {
+    content: "\25BC";
+  }
+
+  #{$pseudos} {
+    color: $txt;
+  }
+
+}
+.accordion {
+  @extend %accordion;
+
+  p {
+    padding: .5em 0;
+    margin-bottom: 0;
+  }
+
+}

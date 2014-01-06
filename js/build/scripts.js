@@ -21,4 +21,13 @@ u[o]&&(delete u[o],c?delete n[l]:typeof n.removeAttribute!==i?n.removeAttribute(
     $(this).closest('.teaser-block').find('.teaser--img').toggleClass('expand');
   });
 
+  // accordions
+  $('.accordion-trigger').on( 'click', function(e) {
+    e.preventDefault();
+
+    $(this).toggleClass('open');
+    $(this).next( '.accordion' ).toggleClass( 'open' );
+
+  });
+
 })(jQuery);
