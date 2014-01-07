@@ -1,4 +1,4 @@
 omlet
 =====
 
-Redesign of omlet.me
+Redesign of omlet.me.
