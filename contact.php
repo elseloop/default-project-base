@@ -10,7 +10,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/build/min/style.min.css">
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
   <script src="js/modernizr.js"></script>
+  <script type="text/javascript">
+    var RecaptchaOptions = {
+      theme : 'custom',
+      custom_theme_widget: 'recaptcha_widget'
+    };
+  </script>
 </head>
 
 <body class="pg-contact">
@@ -37,83 +44,114 @@
         <p>We’ve hatched our first app, but we’re just getting started. For more information about Omlet, MobiSocial, or our official launch in Silicon Valley, please use this simple contact form.</p>
         
         <?php
-        if (isset($_REQUEST['email']))
+
+        if (isset($_REQUEST['email'])) {
         //if "email" is filled out, send email
-          {
-              $email = $_REQUEST['email'] ;         
-              $message = $_REQUEST['message'] ;
-              
-              $privatekey = "6Leum-wSAAAAACPiXTdAhamvGFC5vrdgg-8CyTbE";
-                $resp = recaptcha_check_answer ($privatekey,
-                                              $_SERVER["REMOTE_ADDR"],
-                                              $_POST["recaptcha_challenge_field"],
-                                              $_POST["recaptcha_response_field"]);
-
-                if (!$resp->is_valid) {
-                      echo "<p><b>The reCAPTCHA wasn't entered correctly.</b></p>";
-                } 
-                else {
-                    if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
-
-                            require '../../usr/share/php/libphp-phpmailer/class.phpmailer.php';
-                            require '../../usr/share/php/libphp-phpmailer/class.smtp.php';
-
-                            $mail = new PHPMailer;
-
-                            $mail->IsSMTP();    
-                            //$mail->SMTPDebug  = 2;  
-                            $mail->SMTPAuth   = TRUE;                  // enable SMTP authentication
-                            $mail->SMTPSecure = "tls";                 // sets the prefix to the servier
-                            $mail->Host       = "email-smtp.us-east-1.amazonaws.com";      // sets GMAIL as the SMTP server
-                            //$mail->Port       = 587;                   // set the SMTP port
-                            $mail->Username   = "AKIAI63SVJCKRHCFOVYA"; // GMAIL username
-                            $mail->Password   = "AsYn5a0NgwquqMww4OSSyvRCXIQTZq9qreYCOFpjecdr";      // GMAIL password
-                            //$mail->SetFrom("contact@omlet.me", "Omlet Site");
-                            $mail->SetFrom("contact@omlet.me", "Omlet Site");
-                            $mail->AddReplyTo($email);
-                            $mail->addAddress('contact@omlet.me');  // Add a recipient
-                            $mail->Subject = '[Website Query]';
-                            $mail->Body    = $message;
-                            $mail->AltBody = $message;
-
-                            if(!$mail->send()) {
-                               echo "<p><b>Oops! There was a problem sending your message</b></p>";
-                               //echo 'Mailer Error: ' . $mail->ErrorInfo;
-                            }
-
-                        //send email
-                            else {
-                                echo "<p><b>Thank you for reaching out to us!</b></p>";
-                                $email = "";
-                                $message = "";
-                            }
-                      }
-                      else {
-                          echo "<p><b>Please enter a valid email.</b></p>";
-                      }
-                }
-              
-          }
-          else {
-              $email = "";
-              $message = "";   
-          }
-          echo "<form method='post' action='contact.php'>
-            <table>
-            <tr><td>Email: </td><td><input name='email' type='text' value='".$email."'></td></tr>
-          <tr><td colspan='2'><textarea name='message' rows='10' style='width: 100%;'>".$message."</textarea></td></tr>
-          </table>";
-          
-          $publickey = "6Leum-wSAAAAAEzgDbLIv8pSCcOJxt5kYTrel14p";
-          echo recaptcha_get_html($publickey);
-          
-          echo "<input type='submit'>
-          </form>";
-        ?>
         
-      </div>
+          $name     = $_REQUEST['name'];
+          $email    = $_REQUEST['email'];
+          $message  = $_REQUEST['message'];
+
+          $privatekey = "6Leum-wSAAAAACPiXTdAhamvGFC5vrdgg-8CyTbE";
+          $resp = recaptcha_check_answer (
+                    $privatekey,
+                    $_SERVER["REMOTE_ADDR"],
+                    $_POST["recaptcha_challenge_field"],
+                    $_POST["recaptcha_response_field"]
+                  );
+          
+          if ( !$resp->is_valid ) {
+            
+            echo "<p class='error-msg'><b>The reCAPTCHA wasn't entered correctly.</b></p>";
+          
+          } else {
+            
+            if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+
+              require '../../usr/share/php/libphp-phpmailer/class.phpmailer.php';
+              require '../../usr/share/php/libphp-phpmailer/class.smtp.php';
+
+              $mail = new PHPMailer;
+
+              $mail->IsSMTP();    
+              //$mail->SMTPDebug  = 2;  
+              $mail->SMTPAuth   = TRUE;                  // enable SMTP authentication
+              $mail->SMTPSecure = "tls";                 // sets the prefix to the servier
+              $mail->Host       = "email-smtp.us-east-1.amazonaws.com";      // sets GMAIL as the SMTP server
+              //$mail->Port       = 587;                   // set the SMTP port
+              $mail->Username   = "AKIAI63SVJCKRHCFOVYA"; // GMAIL username
+              $mail->Password   = "AsYn5a0NgwquqMww4OSSyvRCXIQTZq9qreYCOFpjecdr";      // GMAIL password
+              //$mail->SetFrom("contact@omlet.me", "Omlet Site");
+              $mail->SetFrom("contact@omlet.me", "Omlet Site");
+              $mail->AddReplyTo($email);
+              $mail->addAddress('contact@omlet.me');  // Add a recipient
+              $mail->Subject = '[Website Query]';
+              $mail->Body    = $message;
+              $mail->AltBody = $message;
+
+              if(!$mail->send()) {
+                 echo "<p class='error-msg><b>Oops! There was a problem sending your message</b></p>";
+                 //echo 'Mailer Error: ' . $mail->ErrorInfo;
+              } else {
+              //send email
+              
+                echo "<p><b>Thank you for reaching out to us!</b></p>";
+                $email = "";
+                $message = "";
+
+              }
+
+            } // if (filter_var($email, FILTER_VALIDATE_EMAIL))
+
+            else {
+            
+                echo "<p class='error-msg><b>Please enter a valid email.</b></p>";
+            }
+
+          } // if ( $resp->is_valid )
+
+        } // if (isset($_REQUEST['email']))
+        
+        else {
+          
+          $email = "";
+          $message = "";
+
+        }
+        
+        echo "<form method='post' action='contact.php' class='contact-form'>
+          
+          <div class='name-wrap form-el-wrap'>
+            <p><label for='name'>Name</label></p>
+            <p><input name='name' type='text' value='".$name."' placeholder='Jane&nbsp;Doe'></p>
+          </div>
+
+          <div class='email-wrap form-el-wrap'>
+            <p><label for='email'>Email Address</label></p>
+            <p><input name='email' type='email' value='".$email."' placeholder='jane@doe.com'></p>
+          </div>
+
+          <div class='message-wrap form-el-wrap'>
+            <p><label for='message'>Message</label>
+            <p><textarea name='message' rows='10' placeholder='Omlet&nbsp;is&nbsp;awesome!'>".$message."</textarea>
+          </div>
+
+          ";
+
+          $publickey = "6Leum-wSAAAAAEzgDbLIv8pSCcOJxt5kYTrel14p";
+          // echo recaptcha_get_html($publickey);
+          
+          require 'custom-recaptcha.php';
+
+          echo "<p><input type='submit' value='Send Message'></p>
+
+        </form>";
+
+    ?></div>
+
     </div>
   </article>
+
 
   <footer class="site-footer">
     <div class="wrap">

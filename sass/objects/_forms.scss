@@ -1,0 +1,60 @@
+.error-msg {
+  background-color: $pink;
+  border-radius: 4px;
+  padding: .25em .5em;
+  color: white;
+}
+
+.name-wrap,
+.email-wrap {
+  
+  @include respond-to($small) {
+    float: left;
+    width: 50%;
+  }
+
+}
+.name-wrap {
+  @include respond-to($small) {
+    padding-right: em(10);
+  }
+}
+.email-wrap {
+  @include respond-to($small) {
+    padding-left: em(10);
+  }
+}
+
+.contact-form label {
+  // color: fade-out($txt, .25 );
+  color: darken($hr, 25%);
+}
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: em(5) em(8);
+  border: 1px solid $hr;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  @include transition(all .2s);
+  padding: .5em 1em;
+  background-color: $pink;
+  border: 1px solid $pink;
+  border-radius: 4px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+
+  #{$pseudos} {
+    color: $pink;
+    background-color: white;
+  }
+
+}
+
+#recaptcha_widget_div {
+  margin-bottom: 1em;
+}
