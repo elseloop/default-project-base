@@ -3,15 +3,19 @@
   
   a {
     @include hide-text();
+    @include transition(opacity .4s);
     display: inline-block;
-    // width: 85px;
     height: 85px;
-    // margin-right: 35px;
+    width: 85px;
     background: transparent no-repeat center center;
     vertical-align: top;
 
     &:last-of-type {
       margin-right: 0;
+    }
+
+    #{$pseudos} {
+      opacity: .66;
     }
 
   }
@@ -26,5 +30,8 @@
   }
   .insta {
     background-image: image-url('instagram.png');
+  }
+  .g-plus {
+    background-image: image-url('g-plus.png');
   }
 }

@@ -723,7 +723,7 @@ a:active {
     position: relative;
     padding-left: 0.9375em;
     padding-right: 0.9375em;
-    width: 66.66667%;
+    width: 83.33333%;
     margin-left: auto;
     margin-right: auto;
     float: none !important;
@@ -735,7 +735,7 @@ a:active {
   position: relative;
   padding-left: 0.9375em;
   padding-right: 0.9375em;
-  width: 66.66667%;
+  width: 83.33333%;
   margin-left: auto;
   margin-right: auto;
   float: none !important;
@@ -747,7 +747,7 @@ a:active {
     position: relative;
     padding-left: 0.9375em;
     padding-right: 0.9375em;
-    width: 50%;
+    width: 83.33333%;
     margin-left: auto;
     margin-right: auto;
     float: none !important;
@@ -759,7 +759,7 @@ a:active {
   position: relative;
   padding-left: 0.9375em;
   padding-right: 0.9375em;
-  width: 50%;
+  width: 83.33333%;
   margin-left: auto;
   margin-right: auto;
   float: none !important;
@@ -767,33 +767,18 @@ a:active {
 }
 
 .social-nav a {
-  width: 50%;
-  float: left;
-  margin-bottom: 16px;
-}
-
-.social-nav a:nth-child(3) {
-  clear: left;
+  display: inline-block;
+  margin: 0 8px 16px;
 }
 
 @media screen and (min-width: 47.9375em) {
   .social-nav a {
-    width: 25%;
     margin-bottom: 0;
-  }
-
-  .social-nav a:nth-child(3) {
-    clear: none;
   }
 }
 
 .lt-ie9 .social-nav a {
-  width: 25%;
   margin-bottom: 0;
-}
-
-.lt-ie9 .social-nav a:nth-child(3) {
-  clear: none;
 }
 
 .app-features {
@@ -963,12 +948,12 @@ a:active {
 }
 
 .cta--appstore {
-  background: url('/img/ios-store.png?1389041804');
+  background: url('/img/ios-store.png?1389084943');
   background-size: 100%;
 }
 
 .cta--android {
-  background: url('/img/android-store.png?1389041804');
+  background: url('/img/android-store.png?1389084943');
   background-size: 100%;
 }
 
@@ -982,7 +967,7 @@ a:active {
   display: block;
   height: 23px;
   width: 100%;
-  background: transparent url('/img/wave-white.png?1389041804') repeat-x;
+  background: transparent url('/img/wave-white.png?1389084943') repeat-x;
   position: relative;
   bottom: -55px;
   z-index: 2;
@@ -1055,7 +1040,7 @@ a:active {
   text-shadow: none;
   display: inline-block;
   vertical-align: middle;
-  background: transparent url('/img/heart.png?1389041804') no-repeat center center;
+  background: transparent url('/img/heart.png?1389084943') no-repeat center center;
   height: 14px;
   width: 27px;
   color: white;
@@ -1141,7 +1126,7 @@ input[type="submit"]:active {
 
 .hero {
   padding-top: 2em;
-  background: #4fc8f7 url('/img/hero-bg.jpg?1389041804');
+  background: #4fc8f7 url('/img/hero-bg.jpg?1389084943');
   color: white;
   overflow: hidden;
 }
@@ -1335,7 +1320,7 @@ input[type="submit"]:active {
   color: transparent;
   font: 0/0 a;
   text-shadow: none;
-  background-image: url('/img/logo.png?1389041804');
+  background-image: url('/img/logo.png?1389084943');
   background-repeat: no-repeat;
   background-position: center center;
   display: block;
@@ -1532,23 +1517,26 @@ input[type="submit"]:active {
 }
 
 .resource-list a.photo:before {
-  background: transparent url('/img/icon-photo.jpg?1389041804') no-repeat center center;
+  background: transparent url('/img/icon-photo.jpg?1389084943') no-repeat center center;
 }
 
 .resource-list a.video:before {
-  background: transparent url('/img/icon-video.jpg?1389041804') no-repeat center center;
+  background: transparent url('/img/icon-video.jpg?1389084943') no-repeat center center;
 }
 
 .resource-list a.document:before {
-  background: transparent url('/img/icon-document.jpg?1389041804') no-repeat center center;
+  background: transparent url('/img/icon-document.jpg?1389084943') no-repeat center center;
 }
 
 .social-nav a {
   color: transparent;
   font: 0/0 a;
   text-shadow: none;
+  -webkit-transition: opacity 0.4s;
+  transition: opacity 0.4s;
   display: inline-block;
   height: 85px;
+  width: 85px;
   background: transparent no-repeat center center;
   vertical-align: top;
 }
@@ -1557,20 +1545,30 @@ input[type="submit"]:active {
   margin-right: 0;
 }
 
+.social-nav a:hover,
+.social-nav a:focus,
+.social-nav a:active {
+  opacity: .66;
+}
+
 .social-nav .fb {
-  background-image: url('/img/facebook.png?1389041804');
+  background-image: url('/img/facebook.png?1389084943');
 }
 
 .social-nav .tw {
-  background-image: url('/img/twitter.png?1389041804');
+  background-image: url('/img/twitter.png?1389084943');
 }
 
 .social-nav .email {
-  background-image: url('/img/email.png?1389041804');
+  background-image: url('/img/email.png?1389084943');
 }
 
 .social-nav .insta {
-  background-image: url('/img/instagram.png?1389041804');
+  background-image: url('/img/instagram.png?1389084943');
+}
+
+.social-nav .g-plus {
+  background-image: url('/img/g-plus.png?1389084897');
 }
 
 .app-summary {
@@ -1614,7 +1612,7 @@ input[type="submit"]:active {
   display: block;
   height: 14px;
   width: 100%;
-  background: transparent url('/img/wave-yellow.png?1389041804') repeat-x;
+  background: transparent url('/img/wave-yellow.png?1389084943') repeat-x;
   position: relative;
   top: -46px;
   z-index: 2;
@@ -1769,7 +1767,7 @@ input[type="submit"]:active {
   left: 50%;
   top: -21px;
   margin-left: -21px;
-  background: transparent url('/img/expand.png?1389041804') center center;
+  background: transparent url('/img/expand.png?1389084943') center center;
   height: 42px;
   width: 42px;
 }

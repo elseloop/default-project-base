@@ -3,30 +3,19 @@
   text-align: center;
 
   @include respond-to($small) {
-    @include grid-column(8, $center: true);
+    @include grid-column(10, $center: true);  
   }
 
   @include respond-to($medium) {
-    @include grid-column(6, $center: true);
+    @include grid-column(10, $center: true);  
   }
   
   a {
-    width: 50%;
-    float: left;
-    margin-bottom: 16px;
-
-    &:nth-child(3) {
-      clear: left;
-    }
+    display: inline-block;
+    margin: 0 8px 16px;
 
     @include respond-to($medium) {
-      width: 25%;
       margin-bottom: 0;
-
-      &:nth-child(3) {
-        clear: none;
-      }
-
     }
 
   }
