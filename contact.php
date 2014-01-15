@@ -160,7 +160,7 @@
         <a class="fb" href="https://www.facebook.com/omletchat">Facebook</a>
         <a class="tw" href="https://twitter.com/OmletChat">Twitter</a>
         <a class="email" href="mailto:contact@omlet.me">Email</a>
-        <a class="insta" href="http://instagram.com/omletapp">Instagram</a>
+        <a class="insta" href="http://instagram.com/omletchat">Instagram</a>
         <a class="g-plus" href="https://plus.google.com/u/0/105893992327979155254/about">G+</a>
       </nav>
 
