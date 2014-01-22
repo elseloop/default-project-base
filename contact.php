@@ -164,7 +164,7 @@
         <a class="g-plus" href="https://plus.google.com/u/0/105893992327979155254/about">G+</a>
       </nav>
 
-      <p class="site-credits">Made with <span>&hearts;</span> in Palo Alto, CA. Copyright 2014 MobiSocial Inc.</p>
+      <p class="site-credits">Made with <span>&hearts;</span> in Palo Alto, CA. Copyright 2014 <a style="color: #ffffff; font-weight: bold" href="http://www.mobisocial.us">MobiSocial Inc</a>.</p>
 
     </div>
 
