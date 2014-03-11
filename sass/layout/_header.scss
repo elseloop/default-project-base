@@ -1,0 +1,26 @@
+$logo-height: 61px;
+$logo-width: 220px;
+
+.site-header {
+  margin-bottom: 2em;
+}
+
+.logo-wrap {
+  @include grid-column(12);
+  margin-bottom: 0;
+
+  @include respond-to($medium) {
+    @include grid-column(4);  
+  }
+  
+}
+
+.main-nav {
+  @include grid-column(12);
+
+  @include respond-to($medium) {
+    @include grid-column(8);
+    min-height: $logo-height;
+  }
+  
+}

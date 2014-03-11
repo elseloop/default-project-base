@@ -1,0 +1,118 @@
+.hero {
+  padding-top: 2em;
+  background: $blue image-url('hero-bg.jpg');
+  color: white;
+  overflow: hidden;
+  
+  &:after {
+    content: "";
+    display: block;
+    height: 0;
+    width: 100%;
+    box-shadow: 0 -12px 75px 25px rgba(0,0,0,.45);
+    position: relative;
+    z-index: 2;
+  }
+
+  .pg-contact &:after,
+  .pg-about &:after {
+    display: none;
+  }
+
+}
+
+.banner-inner {
+  @extend %cf;
+  padding-top: .5em;
+  
+  p {
+    margin-bottom: 0;
+  }
+
+  .banner--phone {
+    @include grid-column(12, $collapse: true);
+    top: 20px;
+    left: -13%; // ~120px
+    
+    @include respond-to($medium) {
+      @include grid-column(6, $collapse: true, $pull: 6);
+    }
+    
+    .banner--phone--hand {
+      position: relative;
+      z-index: 2;
+    }
+
+    .banner--phone--bg {
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      text-align: right;
+      height: 100%;
+      max-width: 636px; // hand image dimensions here
+      max-height: 726px;
+      
+      padding-top: ( (101 * 100) / 726 ) * 1%;
+
+      @include respond-to($medium) {
+        right: 0;
+        left: 0;
+      }
+
+      img {
+        position: relative;
+        top: ((9 * 100)/484) * 1%;
+        left: -( (92.5 * 100) / 600 ) * 1%; // offset right from phone to "screen" / width of hand img, as %
+        width: 43.239%; // width of "screen" as % of parent's width (width of hand image)
+        max-width: 272px;
+        max-height: 484px;
+        height: auto;
+      }
+    }
+
+  }
+
+  .banner--message {
+    @include grid-column(12);
+    text-align: center;
+    margin-bottom: 1em;
+    
+    @include respond-to($medium) {
+      @include grid-column(6, $collapse: true, $push: 6);
+      margin-bottom: 0;
+      top: em(60);
+    }
+    @include respond-to($large) {
+      top: em(80);
+    }
+
+    h2 {
+      position: relative;
+      left: -40px;
+
+      @include respond-to($medium) {
+        max-width: 80%;
+        left: -16.20087%; // ~120px
+      }
+
+      @include respond-to(em(1100)) {
+        max-width: 100%;
+        left: -26.20087%; // ~120px
+      }
+
+    }
+
+    p {
+      text-align: center;
+
+      @include respond-to($medium) {
+        text-align: left;
+      }
+    }
+    
+  }
+
+}

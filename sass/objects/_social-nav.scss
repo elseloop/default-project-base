@@ -1,0 +1,37 @@
+.social-nav {
+  @extend %cf;
+  
+  a {
+    @include hide-text();
+    @include transition(opacity .4s);
+    display: inline-block;
+    height: 85px;
+    width: 85px;
+    background: transparent no-repeat center center;
+    vertical-align: top;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+    #{$pseudos} {
+      opacity: .66;
+    }
+
+  }
+  .fb {
+    background-image: image-url('facebook.png');
+  }
+  .tw {
+    background-image: image-url('twitter.png');
+  }
+  .email {
+    background-image: image-url('email.png');
+  }
+  .insta {
+    background-image: image-url('instagram.png');
+  }
+  .g-plus {
+    background-image: image-url('g-plus.png');
+  }
+}

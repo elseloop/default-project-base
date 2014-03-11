@@ -10,21 +10,24 @@
   @extend %unstyled;
   @extend %cf;
 
-  > li {
+  > a {
     display:inline-block;
-    *display:inline;
+   *display:inline;
     zoom:1;
-    
-    > a {
-      display:inline-block;
-     *display:inline;
-      zoom:1;
-    }
-
   }
 
 }
 
 %hidden {
   display: none !important;
+}
+
+%accordion {
+  @include transition(max-height .4s ease-out);
+  overflow: hidden;
+  max-height: 0;
+
+  &.open {
+    max-height: 999px;
+  }
 }

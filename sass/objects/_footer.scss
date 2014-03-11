@@ -1,0 +1,45 @@
+.site-footer {
+  @extend %cf;
+  padding: 5em 0 2em;
+  background-color: $blue;
+  text-align: center;
+  overflow: hidden;
+
+  &:before {
+    content: "";
+    display: block;
+    position: relative;
+    z-index: 1;
+    top: -60px;
+    height: 0;
+    width: 100%;
+    box-shadow: 0 0 75px 35px fade-out(black, .75);
+  }
+
+  .pg-contact &:before,
+  .pg-about &:before {
+    display: none;
+  }
+}
+
+.site-credits {
+  @include grid-column(10, $center: true);
+  text-align: center;
+  margin-top: 2.5em;
+  color: fade-out(#f4f4f5, .4);
+
+  @include respond-to($medium) {
+    @include grid-column(6, $center: true);
+  }
+
+  
+  span {
+    @include hide-text();
+    display: inline-block;
+    vertical-align: middle;
+    background: transparent image-url('heart.png') no-repeat center center;
+    height: 14px;
+    width: 27px;
+    color: white;
+  }
+}

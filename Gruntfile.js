@@ -9,7 +9,6 @@ module.exports = function(grunt) {
       dist: {
         options: {
           style: 'expanded', // we'll compress it later
-          require: 'sass-globbing',
           compass: true
         },
         files: {
@@ -64,7 +63,7 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           cwd: 'img/',
-          src: ['**/*.{png,jpg,gif}'],
+          src: ['**/*.{png,jpg}'], // leave gifs alone!
           dest: 'img/'
         }]
       }
@@ -74,6 +73,9 @@ module.exports = function(grunt) {
       options: {
         livereload: true,
       },
+      html: {
+        files: ['index.html'],
+      },
       scripts: {
         files: ['js/*.js'],
         tasks: ['concat', 'uglify', 'jshint'],
@@ -81,9 +83,15 @@ module.exports = function(grunt) {
           spawn: false
         }
       },
-      css: {
-        files: ['sass/*.scss'],
+      sass: {
+        options: {
+          livereload: false
+        },
+        files: ['sass/**/*.scss'],
         tasks: ['sass', 'autoprefixer', 'cssmin'],
+      },
+      css: {
+        files: ['css/build/min/style.min.css'],
         options: {
           spawn: false
         }
@@ -95,7 +103,6 @@ module.exports = function(grunt) {
           spawn: false,
         }
       }
-
     },
 
     connect: {

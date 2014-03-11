@@ -1,0 +1,24 @@
+.app-features {
+  padding: 2em 0;
+}
+
+.app-summary-utility {
+  @include grid-row();
+}
+.teaser-block {
+  @include grid-column(12);
+
+  @include respond-to($medium) {
+    @include grid-column(4);
+  }
+
+}
+
+.teaser--body {
+  @include grid-column(11, $center: true);
+
+  @include respond-to($medium) {
+    @include grid-column(10, $center: true);
+  }  
+
+}

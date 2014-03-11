@@ -15,15 +15,20 @@ h2,
 h3,
 h4,
 h5,
+h6 {
+  font-family: $heading-font;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
 h6,
 ol,
 ul,
 p {
   // only push down, keeps things saner
   margin-top: 0;
-}
-p {
-  font-size: em(14);
 }
 a {
   @include transition(color .25s);
@@ -35,4 +40,4 @@ a {
 
 }
 
-@include placeholder($txt);
+@include placeholder(fade-out($txt,.5));

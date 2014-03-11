@@ -1,0 +1,52 @@
+.teaser-block {
+  text-align: center;
+
+  h3 {
+    font-family: $sans;
+    font-weight: normal;
+    color: $blue;
+  }
+
+}
+
+$phone-height: 543px;
+
+.teaser--img {
+  @include transition(max-height .5s ease-out);
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 2em;
+
+  max-height: $phone-height/4;
+
+  @include respond-to($small) {
+    max-height: $phone-height/3;
+  }
+
+  @include respond-to($small) {
+    max-height: $phone-height/2.5;
+  }
+
+  &.expand {
+    max-height: em(1000);
+  }
+
+}
+
+.teaser--body {
+  border-top: 1px solid $hr;
+  padding-top: 2em;
+  
+  .expando {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    top: -21px;
+    margin-left: -21px;
+    background: transparent image-url('expand.png') center center;
+    height: 42px;
+    width: 42px;
+  }
+
+}

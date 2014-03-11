@@ -1,0 +1,49 @@
+.cta {
+  @include hide-text();
+  @include transition(all .2s);
+  display: inline-block;
+  width: (198/2) * 1px;
+  height: (67/2) * 1px;
+  
+  @include respond-to($small) {
+    width: 198px;
+    height: 67px;
+  }
+  @include respond-to($medium) {
+    width: (198/2) * 1px;
+  height: (67/2) * 1px;
+  }
+  @include respond-to($medium + em(115)) {
+    width: 198px;
+    height: 67px;
+  }
+
+  #{$pseudos} {
+    opacity: .75;
+  }
+  
+}
+.cta--appstore {
+  background: image-url('ios-store.png');
+  background-size: 100%;
+}
+.cta--android {
+  background: image-url('android-store.png');
+  background-size: 100%;
+}
+
+.lower-cta {
+  padding: 2em 0;
+  text-align: center;
+
+    &:after {
+    content: "";
+    display: block;
+    height: 23px;
+    width: 100%;
+    background: transparent image-url('wave-white.png') repeat-x;
+    position: relative;
+    bottom: -55px; // negative (height + padding) to push it down below the padding padding
+    z-index: 2;
+  }
+}

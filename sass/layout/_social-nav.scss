@@ -1,0 +1,23 @@
+.social-nav {
+  @include grid-column(10, $center: true);
+  text-align: center;
+
+  @include respond-to($small) {
+    @include grid-column(10, $center: true);  
+  }
+
+  @include respond-to($medium) {
+    @include grid-column(10, $center: true);  
+  }
+  
+  a {
+    display: inline-block;
+    margin: 0 8px 16px;
+
+    @include respond-to($medium) {
+      margin-bottom: 0;
+    }
+
+  }
+
+}
