@@ -61,4 +61,12 @@
     }
 
   }
+
+  a {
+    color: white;
+    
+    #{$pseudos} {
+      color: $brown;
+    }
+  }
 }

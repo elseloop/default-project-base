@@ -1,0 +1,40 @@
+$base-spacing-unit: 2em !default;
+
+.media {
+  @extend %cf;
+  display: block;
+  overflow: visible;
+  clear: both;
+}
+.media--img {
+  margin-right: $base-spacing-unit;
+
+  @include respond-to($medium) {
+    float:left;
+  }
+
+}
+
+//Reversed image location (right instead of left)
+.media--img-rev {
+  margin-left: $base-spacing-unit;
+  
+  @include respond-to($medium) {
+    float:right;
+  }
+
+}
+
+.media--img img,
+.media--img--rev img {
+  display: inline-block;
+}
+
+.media--body {
+  overflow: hidden;
+}
+
+.media--body,
+.media--body > :last-child{
+  margin-bottom: 0;
+}

@@ -5,15 +5,14 @@ module.exports = function(grunt) {
 
     pkg: grunt.file.readJSON('package.json'),
 
-    sass: {
+    compass: {
       dist: {
         options: {
-          style: 'expanded', // we'll compress it later
-          compass: true
-        },
-        files: {
-          'css/build/style.min.css': 'sass/style.scss'
-        },
+          config: 'config.rb',
+          sassDir: 'sass',
+          cssDir: 'css/build',
+          require: 'sass-globbing'
+        }
       }
     },
 
@@ -21,18 +20,15 @@ module.exports = function(grunt) {
       options: {
         browsers: ['last 2 version']
       },
-      multiple_files: {
-        expand: true,
-        flatten: true,
-        src: 'css/build/*.css',
-        dest: 'css/build/prefixed/'
+      no_dest: {
+        src: 'css/build/style.css'
       }
     },
 
     cssmin: {
       combine: {
         files: {
-          'css/build/min/style.min.css': ['css/build/prefixed/*.css']
+          'css/build/min/style.min.css': ['css/build/*.css']
         }
       }
     },
@@ -83,15 +79,9 @@ module.exports = function(grunt) {
           spawn: false
         }
       },
-      sass: {
-        options: {
-          livereload: false
-        },
-        files: ['sass/**/*.scss'],
-        tasks: ['sass', 'autoprefixer', 'cssmin'],
-      },
       css: {
-        files: ['css/build/min/style.min.css'],
+        files: ['sass/**/*.scss'],
+        tasks: ['compass', 'autoprefixer', 'cssmin' ],
         options: {
           spawn: false
         }
@@ -120,7 +110,7 @@ module.exports = function(grunt) {
   require('load-grunt-tasks')(grunt);
 
   // Default Task is basically a rebuild
-  grunt.registerTask('default', ['concat', 'uglify', 'sass', 'imagemin']);
+  grunt.registerTask('default', ['concat', 'uglify', 'compass', 'autoprefixer', 'cssmin', 'imagemin']);
 
   grunt.registerTask('dev', ['connect', 'watch']);
 
