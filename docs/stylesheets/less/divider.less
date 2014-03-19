@@ -1,0 +1,33 @@
+.divider{
+    background-image: url(../images/divider_logo.png);
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    height: 35px;
+    display: block;
+    clear: both;
+    margin: 8px 0;
+
+    hr{
+        border-style: solid;
+        border-width: 1px 0;
+        border-top-color: #d8d8d8;
+        border-bottom-color: #fff;
+        width: 46%;
+
+        &.left{
+            float: left;
+        }
+
+        &.right{
+            float: right;
+        }
+    }
+
+    a{
+        width: 35px;
+        height: 35px;
+        position: absolute; 
+        left: 50%;
+        margin-left: -(35px / 2);
+    }
+}

@@ -1,0 +1,174 @@
+* {
+	margin, padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #0096ff;
+}
+
+body {
+	font-family: "Roboto Slab", serif;
+	color: #181818;
+	padding-bottom: 50px;
+	width: 100%;
+}
+
+#header {
+	font-size: 4em;
+	text-align: center;
+	font-weight: bold;
+	position: relative;
+}
+
+#sub-header {
+	font-size: 1.25em;
+	text-align: center;
+	width: 90%;
+	margin-left: 5%;
+	position: relative;
+}
+
+#section-header {
+	font-size: 2.5em;
+	text-align: center;
+	width: 90%;
+	margin-left: 5%;
+	margin-top: 40px;
+	font-weight: bold;
+	position: relative;
+}
+
+#app-store-buttons {
+	margin-top: 5px;
+	width: 298px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+
+.app-store-button {
+	height: 45px;
+	width: 144px;
+	background-size: contain;
+	float: left;
+	position: relative;
+}
+
+#apple {
+	background-image: url("images/ios_app_store.png");
+	position: relative;
+}
+
+#google{
+	margin-left: 10px;
+	background-image: url("images/android_app_store.png");
+	position: relative;
+}
+
+#steps-container {
+	position: relative;
+}
+
+.step {
+	width: 90%;
+	margin-left: 5%;
+	margin-top: 30px;
+	position: relative;
+}
+
+.step-number {
+	font-weight: bold;
+	font-size: 1.5em;
+	position: relative;
+}
+
+#results-container {
+	position: relative;
+}
+
+.result {
+	width: 90%;
+	margin-left: 5%;
+	text-align: center;
+	margin-top: 30px;
+	position: relative;
+}
+
+.faq-entry {
+	margin-top: 20px;
+	padding-bottom: 20px;
+	position: relative;
+}
+
+.question {
+	font-size: 1.5em;
+	font-weight: bold;
+	position: relative;
+}
+
+.answer {
+	position: relative;
+
+}
+
+.clear {
+	clear: both;
+}
+
+
+/* styling for full size screens */
+@media screen and (min-width: 47.9375em) {
+	#header {
+		text-align: left;
+		font-size: 5.5em;
+		margin-left: 20px;
+	}
+
+	#sub-header {
+		text-align: left;
+		font-size: 1.5em;
+		margin-left: 30px;
+	}
+
+	#section-header {
+		font-size: 3em;
+		text-align: left;
+		margin-left: 30px;
+	}
+
+	#app-store-buttons {
+		margin-top: 5px;
+		width: 100%;
+		margin-left: 30px;
+	}
+
+	.app-store-button {
+		height: 80px;
+		width: 256px;
+	}
+
+	#google {
+		margin-left: 20px;
+	}
+
+	#steps-container {
+
+	}
+
+	.step {
+		float: left;
+		width: 25%;
+		margin-left: 6%;
+	}
+
+	#results-container {
+
+	}
+
+	.result {
+		float: left;
+		width: 25%;
+		margin-left: 6%;
+	}
+}

@@ -29,8 +29,11 @@
         <h1 class="logo-wrap"><a href="/" class="logo">Omlet</a></h1>
 
         <nav class="main-nav">
+        <a href="/docs">Developer</a>
           <a href="/company.html">Company</a>
+            <a href="/press.html">Press</a>
           <a class="active" href="/contact.php">Contact</a>
+          <a href="http://omletchat.tumblr.com">Blog</a>
         </nav>
 
     </header>
@@ -68,8 +71,8 @@
             
             if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
 
-              require '../../usr/share/php/libphp-phpmailer/class.phpmailer.php';
-              require '../../usr/share/php/libphp-phpmailer/class.smtp.php';
+              require '../../../usr/share/php/libphp-phpmailer/class.phpmailer.php';
+              require '../../../usr/share/php/libphp-phpmailer/class.smtp.php';
 
               $mail = new PHPMailer;
 
@@ -85,7 +88,7 @@
               $mail->SetFrom("contact@omlet.me", "Omlet Site");
               $mail->AddReplyTo($email);
               $mail->addAddress('contact@omlet.me');  // Add a recipient
-              $mail->Subject = '[Website Query]';
+              $mail->Subject = '[Omlet Site Query]';
               $mail->Body    = $message;
               $mail->AltBody = $message;
 

@@ -1,0 +1,84 @@
+@img_sm_max_width: 100px;
+@img_med_max_width: @img_sm_max_width * 2;
+@img_lrg_max_width: @img_med_max_width * 2;
+@img_xlrg_max_width: 80%;
+
+#content{
+    position: relative;
+    margin-top: -40px;
+
+    .center-text{
+        text-align:center;
+    }
+
+    .float-right{
+        float: right;
+    }
+
+    .float-left{
+        float: left;
+    }
+
+    .inner-content{
+        position:relative;
+    }
+
+    pre{
+        margin: 12px 0;
+    }
+
+    .section{
+        background-color: #fff;
+        padding: 0 25px 25px; 
+        border: 1px solid #d8d8d8;
+        min-height: 150px;
+        box-shadow: 0px 0px 3px 1px rgba(51, 51, 51, 0.03); 
+
+        ul{
+            padding-left: 15px;
+        }
+    }
+
+    h1, h2{
+        clear: both;
+        font-size: 24px;
+        font-weight: 400;
+        color: @h1_color;
+        margin: 20px 0 0;
+
+        strong{
+            font-weight: 500;
+        }
+    }
+
+    h2{
+        font-size: 20px;
+    }
+
+    p{
+        margin: 20px 0;
+    }
+
+    .img-container{
+        float: right;
+        margin: 20px 0 0 20px;
+        //width is applied by adding one of the .img-[size] classes below
+
+        &.left{ float: left; }
+
+        img{
+            max-width: 100%;
+        }
+    }
+
+    .img-small{ max-width: @img_sm_max_width; }
+    .img-med{ max-width: @img_med_max_width; }
+    .img-large{ max-width: @img_lrg_max_width; }
+    .img-xlarge{ max-width: @img_xlrg_max_width; }
+
+    .clear{
+        clear: both;
+        height: 0;
+        display: block;
+    }
+}

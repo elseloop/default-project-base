@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Omlet Developers</title>
+    <meta charset="utf8">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="highlight/styles/default.css">
+    <link rel="stylesheet" href="highlight/styles/xcode.css">
+    <script type="text/javascript" src="bower_components/jquery/jquery.js"></script>
+    <script type="text/javascript" src="bower_components/underscore/underscore-min.js"></script>
+    <script type="text/javascript" src="bower_components/bootstrap/js/affix.js"></script>
+    <script type="text/javascript" src="highlight/highlight.pack.js"></script>
+    <script type="text/javascript" src="javascripts/coffee/main.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      
+      ga('create', 'UA-36768800-7', 'omletchat.com');
+      ga('send', 'pageview');
+      
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', '36768800-7']);
+      _gaq.push(['_trackPageview']);
+      
+      (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <div class="col-md-12">
+          <ul class="nav pull-right">
+            <li><a href="#">Developers</a></li>
+            <li><a href="/company">Company</a></li>
+            <li><a href="/contact.php">Contact</a></li>
+          </ul>
+          <div id="logo"><img src="images/logo.png"></div>
+        </div>
+      </div>
+    </div>
+    <div id="second-header">
+      <div class="container">
+        <div class="col-md-12">
+          <h1>Omlet Developer Center</h1>
+          <p class="subtitle">Hopefully you will find everything you need to get started as a partner, app developer, or tinkerer here.</p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-2">
+          <ul id="main-nav" class="nav nav-pills nav-stacked">
+            <li class="title">Overview</li>
+            <li class="active"><a href="#" data-target="getting_started">Getting Started</a></li>
+            <li class="title">iOS</li>
+            <li><a href="#" data-target="ios_overview">Overview</a></li>
+            <li><a href="#" data-target="ios_share_to_omlet">Share to Omlet</a></li>
+            <li><a href="#" data-target="ios_in_chat_sharing">Drawer Apps</a></li>
+            <li><a href="#" data-target="ios_photo_editors">Photo Editors</a></li>
+            <li><a href="#" data-target="ios_content_types">Supported Types</a></li>
+            <li><a href="#" data-target="ios_resources">Resources</a></li>
+            <li class="title">Android</li>
+            <li><a href="#" data-target="android_overview">Overview</a></li>
+            <li><a href="#" data-target="android_send_content">Send Content</a></li>
+            <li><a href="#" data-target="android_drawer_apps">Drawer Apps</a></li>
+            <li><a href="#" data-target="android_photo_editors">Photo Editors</a></li>
+            <li><a href="#" data-target="android_content_types">Content Types</a></li>
+            <li><a href="#" data-target="android_platform_integrations">Platform Integrations</a></li>
+            <li class="title">WebApps</li>
+            <li><a href="#" data-target="web_apps">Overview</a></li>
+            <li><a href="#" data-target="shared_document_api">Shared Document API</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-10">
+          <div id="content">
+            <div class="inner-content">
+              <div data-name="getting_started" class="section">
+                <h1>Want to be part of a New Open Social Experience?</h1>
+                <p>Then you've come to the right place. We are creating an Open Social Mobile internet, one that emphasizes group communication and contextualizes sharing and frictionless micro-social interactions. Our app platform helps partners build a dynamic group sharing experience with minimal effort to promote viral spreading through easy, direct, authentic sharing amongst friends.</p>
+                <p>We believe in a better mobile social experience and want you to be a part of this mission. Join our movement and become one of our pioneer partners. We are currently looking for inaugural apps to launch and best-in-class developers who share our vision of creating a new OSM community.The OSM APIs work with the Omlet Chat platform, and are also designed to be used by other apps that want to support a similar style of sharing.</p>
+                <div class="clear"></div>
+              </div>
+                  <div class="divider">
+                    <hr class="left"><a role="nav_link" data-target="index" href="#" title="Back to Top" class="logo"></a>
+                    <hr class="right">
+                  </div>
+              <div data-name="ios_overview" class="section">
+                <h1>iOS - Overview</h1>
+                <p>There are several ways to add Omlet integration to your iOS app. Share data through Omlet by launching Omlet with your choice of data, or add your app to the Omlet "App Drawer" so users can quickly launch your app to share with friends. Make your photo editor social by adding hooks so it can be launched from friends' pictures directly in a chat to add fun stickers, filters, and effects from your favorite apps.</p>
+                <div class="clear"></div>
+              </div>
+                  <div class="divider">
+                    <hr class="left"><a role="nav_link" data-target="index" href="#" title="Back to Top" class="logo"></a>
+                    <hr class="right">
+                  </div>
+              <div data-name="ios_share_to_omlet" class="section">
+                <h1>Share to Omlet</h1>
+                <p>Sharing from your app to Omlet is fairly easy and only requires one snippet of code. The flow looks like this:</p>
+                <p class="center-text"><img src="images/ios_sharing.png"></p>
+                <h2>Call Out to Omlet</h2>
+                <pre class="objectivec">UIPasteboard* pb = [GlueStick getPlatformPasteboard];
+pb.image = imageYouWantToShare;
+
+NSURL* omletURL = [NSURL URLWithString:@"omlet://app/content"];
+[[UIApplication sharedApplication] openURL:omletURL];
+</pre>
+                <h2>Download an Example</h2>
+                <p>We have written a simple app that makes use of this called Reaction Gifs. The source for this can be found in our repository <a href="https://github.com/MobiSocialInc/ReactionGifs" target="_BLANK">here.</a></p>
+                <div class="clear"></div>
+              </div>
+                  <div class="divider">
+                    <hr class="left"><a role="nav_link" data-target="index" href="#" title="Back to Top" class="logo"></a>
+                    <hr class="right">
+                  </div>
+              <div data-name="ios_in_chat_sharing" class="section">
+                <h1>Drawer Apps for In-Chat Sharing</h1>
+                <p>There are two short snippets of code that you need to implement in order to support in-chat sharing. This flow diagram explains how those pieces of code tie into the whole interaction from beginning to end. Details on the code can be found afterwards.</p>
+                <p class="center-text"><img src="images/ios_in_chat_sharing.png" class="img-xlarge"></p>
+                <h2>Prerequisites</h2>
+                <ul>
+                  <li><a href="/developer/dashboard" target="_BLANK">Register your app</a> with us so that you can show up in the App Drawer</li>
+                  <li>Download our GlueStick helper class. It is available along with several open source applications on our <a href="https://github.com/MobiSocialInc/GlueStick">GitHub page.</a></li>
+                </ul>
+                <p>Omlet supports images, animated .gifs and arbitrary application-specific data types. See the "Supported Types" for details.</p>
+                <h2>Calling Your App</h2>
+                <p>In order for Omlet to be able to call your app, you need to add this code in your AppDelegate:</p>
+                <pre class="objectivec">// AppDelegate.m:
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url
+   sourceApplication:(NSString *)sourceApplication
+   annotation:(id)annotation {
+
+   NSURL* omletCallbackURL = [GlueStick callbackURLFromPasteboardURL:launchUrl];
+}
+</pre>
+                <h2>Return to Omlet</h2>
+                <p>When you are ready to send content back to Omlet:</p>
+                <pre class="objectivec">if (GlueStick.callbackURL) {
+    [GlueStick finishWithContent:(NSData*)data withType(NSString*)pasteboardType];
+}
+</pre>
+                <h2>Download an Example</h2>
+                <p>We have written a simple app that makes use of this called Reaction Gifs. The source for this can be found in our <a href="https://github.com/MobiSocialInc/ReactionGifs">GitHub repository</a>.</p>
+                <p class="center-text"><img src="images/ios_drawer_app.jpg"></p>
+                <div class="clear"></div>
+              </div>
+                  <div class="divider">
+                    <hr class="left"><a role="nav_link" data-target="index" href="#" title="Back to Top" class="logo"></a>
+                    <hr class="right">
+                  </div>
+              <div data-name="ios_photo_editors" class="section">
+                <h1>iOS Photo Editors</h1>
+                <p>Omlet uses an open protocol to allow third party photo editor apps to be used from the Omlet Editor. Users can enhance their chat experience with their favorite editor apps to add stickers, text, and other effects to friends' photos.</p>
+                <p>The photo editing protocol is an extension of the "Drawer App" protocol previously discussed. Once you have <a href="https://omlet.me/developer/dashboard">registered your app</a> as an Editor, it will be accessible from the "More Apps" button in the Omlet Editor.</p>
+                <p>When your app is launched, it is passed a <code>UIImage</code> on the shared pasteboard. Use this image as the basis for editing:</p>
+                <pre class="objectivec">// AppDelegate.m:
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url
+   sourceApplication:(NSString *)sourceApplication
+   annotation:(id)annotation {
+
+   NSURL* omletCallbackURL = [GlueStick callbackURLFromPasteboardURL:launchUrl];
+   UIImage* imageToEdit = [GlueStick getPlatformPasteboard].image;
+}
+</pre>
+                <p>When you are ready to return your image back to Omlet:</p>
+                <pre class="objectivec">if (GlueStick.callbackURL) {
+    [GlueStick getPlatformPasteboard].image = imageToReturn;
+    [GlueStick finish];
+}
+</pre>
+                <p class="center-text"><img src="images/ios_ed.jpg" class="img-xlarge"><br/>Using the Nüdifier app to edit a photo in a chat</p>
+                <div class="clear"></div>
+              </div>
+                  <div class="divider">
+                    <hr class="left"><a role="nav_link" data-target="index" href="#" title="Back to Top" class="logo"></a>
+                    <hr class="right">
+                  </div>
+              <div data-name="ios_content_types" class="section">
+                <h1>Supported Pasteboard Types</h1>
+                <h2>Images</h2>
+                <p>Put a UIImage* as the image property on the pasteboard:</p>
+                <pre class="objectivec">UIPasteboard* pb = [GlueStick getPlatformPasteboard];
+pb.image = imageToShare;</pre>
+                <h2>Animated GIF</h2>
+                <p>Put the NSData* of your GIF as the pasteboard type "com.compuserve.gif":</p>
+                <pre class="objectivec">NSData* gifData [self getGifData];
+UIPasteboard* pb = [GlueStick getPlatformPasteboard];
+[pb setData:gifData forPasteboardType:@"com.compuserve.gif"];</pre>
+                <h2>Rich Deep Link</h2>
+                <p>A Rich Deep Link (RDL) is a collection of fields that represents data from your app. It also includes a callback so that the data can be invoked back inside your app. When the RDL is launched, the contents of the RDL are returned to our app, similar to how a URL is sent to the server when it is opened in the web.</p>
+                <p class="float-right"><img src="https://omlet.me/developer/dashboard/images/rdl.png"></p>
+                <p>Use the GlueStick utility to share RDL data. You may specify the following fields:</p>
+                <ul>
+                  <li>noun, a one-word description of the content</li>
+                  <li>displayTitle, a title describing the content</li>
+                  <li>displayText, a piece of text representing the content</li>
+                  <li>displayThumbnail, a UIImage representing the content</li>
+                  <li>displayCaption, text to display below the thumbnail</li>
+                  <li>appName, the display name of the target application</li>
+                  <li>json, data related to the content, opaque to the host application</li>
+                  <li>callback, a url used to re-open the target application</li>
+                  <li>webCallback, a web url used if the callback url can't be accessed</li>
+                </ul>
+                <div class="clear"></div>
+              </div>
+                  <div class="divider">
+                    <hr class="left"><a role="nav_link" data-target="index" href="#" title="Back to Top" class="logo"></a>
+                    <hr class="right">
+                  </div>
+              <div data-name="ios_resources" class="section">
+                <h1>iOS Resources</h1>
+                <p>
+                  <ul>
+                    <li><a href="http://iosdevelopertips.com/cocoa/launching-your-own-application-via-a-custom-url-scheme.html" taret="_BLANK">Custom URL Handler</a></li>
+                    <li><a href="https://github.com/MobiSocialInc/GlueStick" target="_BLANK">GlueStick Utility</a></li>
+                    <li><a href="/developer/dashboard" target="_BLANK">Register your App</a></li>
+                  </ul>
+                </p>
+                <div class="clear"></div>
+              </div>
+                  <div class="divider">
+                    <hr class="left"><a role="nav_link" data-target="index" href="#" title="Back to Top" class="logo"></a>
+                    <hr class="right">
+                  </div>
+              <div data-name="android_overview" class="section">
+                <h1>Android - Overview</h1>
+                <p>Using Android's system of <a href="http://developer.android.com/guide/components/intents-filters.html" target="_BLANK">Intents</a>, you can write different kinds of apps to make the chatting experience truly personal.
+                  In addition to supporting the standard "SEND" intent to share data with groups, Omlet lets you
+                  write apps that can be launched directly from a chat for super-fast sharing. You can also write
+                  photo editors so friends can have fun decorating each others' photos with fun stickers, filters, effects, and more.
+                </p>
+                <div class="clear"></div>
+              </div>
+                  <div class="divider">
+                    <hr class="left"><a role="nav_link" data-target="index" href="#" title="Back to Top" class="logo"></a>
+                    <hr class="right">
+                  </div>
+              <div data-name="android_send_content" class="section">
+                <h1>Android - Send Content</h1>
+                <p>
+                  Omlet supports the standard
+                  <a href="http://developer.android.com/reference/android/content/Intent.html#ACTION_SEND" target="_BLANK"><code>SEND</code></a> Intent to share content with friends. Issue a SEND intent with your content attached to let the user choose friends they'd like to share with. Omlet also respects the <a href="http://developer.android.com/reference/android/content/Intent.html#ACTION_SEND_MULTIPLE" target="_BLANK"><code>SEND_MULTIPLE</code></a> action for sharing images. If you'd like to explicitly share using Omlet, set the package name of your Intent to <code>mobisocial.omlet</code>.
+                </p>
+                <p class="text-center"><img src="images/android_send.jpg"><br/>Launching Omlet to share a photo in a chat.</p>
+                <div class="clear"></div>
+              </div>
+                  <div class="divider">
+                    <hr class="left"><a role="nav_link" data-target="index" href="#" title="Back to Top" class="logo"></a>
+                    <hr class="right">
+                  </div>
+              <div data-name="android_drawer_apps" class="section">
+                <h1>Drawer Apps</h1>
+                <p>You can build apps that directly extend the chat experience. By adding your app to the "App Drawer", users can launch your app to share different kinds of content quickly. To have your app show up in the App Drawer, create an activity with an intent filter for the action <code class="objectivec">mobisocial.intent.action.LAUNCH</code>, along with category <code class="java">android.intent.category.DEFAULT</code>.</p>
+                <p>Your activity can send any type of content supported by Omlet. Simply use <a href="http://developer.android.com/reference/android/app/Activity.html#setResult(int, android.content.Intent)"><code>setResult(int, data)</code></a> with result code <code>RESULT_OK</code> and your chosen data. Remember to also set the content type of your data.</p>
+                <p>An example intent filter for your drawer app:</p>
+                <pre class="xml">&lt;activity android:name="MyDrawerAppActivity"&gt;
+    &lt;intent-filter&gt;
+        &lt;action android:name="mobisocial.intent.action.LAUNCH"/&gt;
+        &lt;category android:name="android.intent.category.DEFAULT"/&gt;
+    &lt;/intent-filter&gt;
+&lt;/activity&gt;</pre>
+                <p>Returning content to share in a chat:</p>
+                <pre class="java">onClickedSend () {
+	Uri response = new Intent();
+	response.putExtra(Intent.EXTRA_TEXT, "My first app rocks!");
+	response.setType("text/plain");
+	setResult(RESULT_OK, response);
+	finish();
+}</pre>
+                <div class="clear"></div>
+              </div>
+                  <div class="divider">
+                    <hr class="left"><a role="nav_link" data-target="index" href="#" title="Back to Top" class="logo"></a>
+                    <hr class="right">
+                  </div>
+              <div data-name="android_photo_editors" class="section">
+                <h1>Photo Editors</h1>
+                <p>Omlet's built-in photo editor can be extended with any photo editor to let friends have fun tweaking each others' photos. Your photo editor can be added to Omlet's "Editor Hub" by supporting an intent with action <a href="http://developer.android.com/reference/android/content/Intent.html#ACTION_EDIT"><code>EDIT</code></a> and mime type "image/*". By default, the <code>EDIT</code> intent does not return data back to the caller. You must also include the category <code>mobisocial.intent.action.IN_PLACE</code> in your intent filter. Your application will be launched with an image stored on the file system. When your app is done editing, you should save the file at the same path, then call <code>setResult(RESULT_OK)</code> and <code>finish()</code>. You can also cancel the edits using <code>setResult(RESULT_CANCEL)</code>.</p>
+                <p class="text-center"><img src="images/android_ed.jpg"><br/>Launching the PicSay photo editor from Omlet to share in a chat.</p>
+                <p>An example intent filter for your editor activity:</p>
+                <pre class="xml">&lt;activity android:name="MyEditorActivity"&gt;
+    &lt;intent-filter&gt;
+        &lt;action android:name="android.intent.action.EDIT"/&gt;
+        &lt;category android:name="android.intent.category.DEFAULT"/&gt;
+        &lt;category android:name="mobisocial.intent.category.IN_PLACE"/&gt;
+        &lt;data android:mimeType="image/*"/&gt;
+    &lt;/intent-filter&gt;
+&lt;/activity&gt;</pre>
+                <p>Accept the image to edit:</p>
+                <pre class="java">@Override
+onCreate (Bundle bundle) {
+	super.onCreate(bundle)
+
+	Uri imageToEdit = getIntent().getData();
+	// Let the editing begin!
+}</pre>
+                <p>Return the edited image:</p>
+                <pre class="java">void onClickedSave() {
+  Intent response = new Intent();
+  response.setDataAndType(mEditedImageUri, "image/jpeg");
+  setResult (RESULT_OK, response);
+  finish();
+}</pre>
+                <div class="clear"></div>
+              </div>
+                  <div class="divider">
+                    <hr class="left"><a role="nav_link" data-target="index" href="#" title="Back to Top" class="logo"></a>
+                    <hr class="right">
+                  </div>
+              <div data-name="android_content_types" class="section">
+                <h1>Content Types</h1>
+                <p>Omlet supports a range of content types:</p>
+                <ul>
+                  <li>image/gif: animated gif</li>
+                  <li>image/*: still picture</li>
+                  <li>text/plain</li>
+                  <li>Any type of file (shared files are limited to 4mb in size)</li>
+                </ul>
+                <p>Omlet also supports a custom type called Rich Deep Link (RDL). RDLs let you attach a thumbnail, title, and text snippet, and also data that is not visible to the user. When a user taps on an RDL in a chat, your application is launched and given the RDL as an argument. For example, you can attach the state of a turn-based game in an RDL, and load that state when your application is launched. If your app is not installed on the device, the user is taken to the appropriate app store to download it.</p>
+                <div class="clear"></div>
+              </div>
+                  <div class="divider">
+                    <hr class="left"><a role="nav_link" data-target="index" href="#" title="Back to Top" class="logo"></a>
+                    <hr class="right">
+                  </div>
+              <div data-name="android_platform_integrations" class="section">
+                <h1>Platform Integrations</h1>
+                <p>Omlet supports deeper integrations at the operating system level. <a href="mailto:dev@mobisocial.us">Contact us</a> to find out more.</p>
+                <div class="clear"></div>
+              </div>
+                  <div class="divider">
+                    <hr class="left"><a role="nav_link" data-target="index" href="#" title="Back to Top" class="logo"></a>
+                    <hr class="right">
+                  </div>
+              <div data-name="web_apps" class="section">
+                <h1>Web Apps</h1>
+                <p>Web apps are the easiest way to drop in something quickly in Omlet. To get started, check out our sample app <a href="https://github.com/MobiSocialInc/RottenFilms" target="_BLANK">RottenFilms</a>, for sharing Rotten Tomato box office movies in Omlet.</p>
+                <p>Once you've built your webapp, be sure to <a href="/dashboard/developer" target="_BLANK">register it</a> so you can use it in Omlet.</p>
+                <div class="clear"></div>
+              </div>
+                  <div class="divider">
+                    <hr class="left"><a role="nav_link" data-target="index" href="#" title="Back to Top" class="logo"></a>
+                    <hr class="right">
+                  </div>
+              <div data-name="shared_document_api" class="section">
+                <h1>Shared Document API</h1>
+                <p>The Shared Document API is designed to help you build applications that share state across multiple devices. A document is simply a piece of JSON data with arbitrary fields. A document is created and stored under a user's account. The document's id can then be shared with others, granting them access read and update the data.</p>
+                <p>All updates to the document happen on the server. An update is specified as a Javascript function along with some parameters. The document itself is given as the first parameter, and you may add any additional parameters you find useful. The function returns a piece of JSON, which becomes the newly updated document.</p>
+                <p>Game Counter is a simple OSM-enabled web app demonstrating how to use the Document API.</p>
+                <div class="clear"></div>
+              </div>
+                  <div class="divider">
+                    <hr class="left"><a role="nav_link" data-target="index" href="#" title="Back to Top" class="logo"></a>
+                    <hr class="right">
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
