@@ -14,7 +14,7 @@
 }
 
 // placeholder text
-@mixin placeholder($color) {
+@mixin placeholder( $color ) {
   ::-webkit-input-placeholder {
     color: $color;
     font-weight: 300;

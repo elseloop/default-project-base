@@ -1,3 +1,8 @@
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 /*! normalize.css v2.1.1 | MIT License | git.io/normalize */
 
 /* ==========================================================================
@@ -465,10 +470,6 @@ p {
   margin-top: 0;
 }
 
-p {
-  font-size: 0.875em;
-}
-
 a {
   -webkit-transition: color 0.25s;
   transition: color 0.25s;
@@ -479,26 +480,6 @@ a:hover,
 a:focus,
 a:active {
   text-decoration: none;
-}
-
-::-webkit-input-placeholder {
-  color: #111111;
-  font-weight: 300;
-}
-
-:-moz-placeholder {
-  color: #111111;
-  font-weight: 300;
-}
-
-::-moz-placeholder {
-  color: #111111;
-  font-weight: 300;
-}
-
-:-ms-input-placeholder {
-  color: #111111;
-  font-weight: 300;
 }
 
 /* No files to import found in objects/* */
